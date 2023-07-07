@@ -1,0 +1,50 @@
+---
+title: "Cascadia R Then/Now/Next"
+author: ["Chester Ismay", "Ted Laderas", "Jessica Minnier"]
+date: 08/19/2023
+format: 
+  revealjs:
+    preview-links: true
+    standalone: true
+    scrollable: true
+    theme: sky
+highlight-style: a11y
+---
+
+## Outline
+
+- Then (How we started)
+- Now (How the conf has evolved)
+- Next (What we hope for the future)
+
+## The origins
+
+[Chester here]
+
+## A Minimum Viable Conference
+
+
+
+## 2017: It was just 6 people
+
+- But we were an awesome team
+
+
+## How far did people travel?
+
+![Histogram of Distance](images/histogram-distance.png)
+
+## How did we do?
+
+> Amazing conference! love the one day thing, the schedule, and the location!
+
+> I think the cheap cost and central location really contributed to the crowd size. 
+
+> It would be great to have a keynote about ethics in data science.
+
+
+## What Went Well?
+
+
+## What Did We Learn? 
+
