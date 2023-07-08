@@ -30,6 +30,7 @@ highlight-style: a11y
 - But we were an awesome team
 
 
+
 ## How far did people travel?
 
 ![Histogram of Distance](images/histogram-distance.png)
