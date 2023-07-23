@@ -19,16 +19,48 @@ highlight-style: a11y
 
 ## The origins
 
-[Chester here]
+- Over Beer
+- An excuse to bring Charlotte Wickham to Portland
 
 ## A Minimum Viable Conference
 
+What do you need?
+
+:::{.incremental}
+- A venue 
+- Speakers
+- An Audience
+- Code of Conduct
+- Snacks and Drinks 
+- Bartender
+- Places to Stay
+:::
 
 
 ## 2017: It was just 6 people
 
 - But we were an awesome team
 
+## Minimum Viable Conference
+
+|What we needed|Where it came from|
+|--------------|------------------|
+|A Venue | OHSU Collaborative Life Science Building |
+|Speakers | Call for presentations |
+|Audience | Meetup Mailing Lists / Friends |
+|Code of Conduct | R-Ladies |
+|Snacks and Drinks | Costco |
+|Nametags | Office store |
+|Bartender | OHSU approved |
+|Childcare ||
+
+## 2017: 245 People Registered!
+
+![](images/IMG_4201.JPG)
+
+
+
+## cRaggy
 
 
 ## How far did people travel?
