@@ -22,6 +22,7 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 - Then (How we started)
 - Now (How the conf has evolved)
 - Next (What we hope for the future)
+- Secret Goal (DIY)
 
 ## The origins
 
@@ -95,6 +96,11 @@ What do you need?
 |Nametags | Office store |
 |Bartender | OHSU approved |
 |Childcare ||
+
+
+## Who does what?
+
+![Trello Board](images/trello.png)
 
 ## Who Gets to Talk?
 
