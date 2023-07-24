@@ -43,6 +43,7 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 
 - Home-Grown
 - Informal
+- Social
 - Inclusive
 - Accessible
 - beeR
