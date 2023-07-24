@@ -41,13 +41,20 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 
 ## Our Values
 
+::::{.columns}
+:::{.column}
 - Home-Grown
 - Informal
 - Social
+:::
+
+:::{.column}
 - Inclusive
 - Accessible
 - beeR
+:::
 
+::::
 
 ## A Minimum Viable Conference
 
