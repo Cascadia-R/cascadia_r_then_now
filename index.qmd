@@ -73,10 +73,10 @@ What do you need?
 ## How far did people travel?
 
 ![Histogram of Distance](images/histogram-distance.png)
+
 ## How did we do?
 
 ```{r}
-
 responses_likert <- responses |>
   select(contains("Main")) |>
   mutate(across(everything(), as.numeric)) |>
@@ -90,8 +90,6 @@ responses_likert |>
   geom_bar() +
   facet_wrap(~category)
 ```
-
-## 
 
 
 ## How did we do?
