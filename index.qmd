@@ -1,6 +1,6 @@
 ---
 title: "Cascadia R Then/Now/Next"
-author: ["John David Smith", "Ted Laderas", "Jessica Minnier"]
+author: ["John David Smith", "Jessica Minnier", "Ted Laderas"]
 date: 08/19/2023
 format: 
   revealjs:
@@ -111,8 +111,9 @@ What do you need?
 
 ![](images/IMG_4201.JPG)
 
-## cRaggy
+## cRaggy: Visualizing Together
 
+![](images/IMG_4387.jpg)
 
 ## How far did people travel?
 
@@ -121,18 +122,29 @@ What do you need?
 ## How did we do?
 
 ```{r}
+#! warning: false
+
 responses_likert <- responses |>
   select(contains("Main")) |>
-  mutate(across(everything(), as.numeric)) |>
+  mutate(across(everything(), as.character)) |>
   tidyr::pivot_longer(everything(), names_to = "category", values_to = "likert") |>
-  mutate(category=str_replace(category, "Main Conference Organization", "")) |>
-  mutate(category = factor(category))
+  dplyr::filter(!likert == "N/A") |>
+  mutate(category=str_replace(category, "Main Conference Organization ", "")) |>
+#  mutate(category = factor(category)) |>
+  mutate(likert = factor(likert, levels=c("1", "2", "3", "4", "5"))) |>
+  mutate(boxcolor = case_when(likert %in% c(4,5) ~ "green",
+                   TRUE ~ "grey")) |>
+  filter(category %in% c("[Conference agenda overall]", "[Location/Meeting space]", "[Talk quality]", "[Snacks and drinks]"))
   
+  boxcol_vals <- c("green" = "orange", "grey" = "grey")
+
 responses_likert |>
   ggplot() +
-  aes(x=likert) +
+  aes(x=likert, fill=boxcolor) +
+  scale_fill_manual(values=boxcol_vals,aesthetics = c("color", "fill"), drop=FALSE) +
   geom_bar() +
-  facet_wrap(~category)
+  facet_wrap(~category) +
+  theme(legend.position = "none", )
 ```
 
 
