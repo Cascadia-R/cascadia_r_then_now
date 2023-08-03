@@ -54,7 +54,7 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 - Accessible
 - beeR
 :::
-
+::::
 
 ## 2017: It was just 6 people
 
@@ -75,11 +75,16 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 |Keynote Speaker | Gabriela Quieroz, IBM/R-Ladies/Vinay Prasad, OHSU |
 |Speakers | Call for presentations |
 |Audience | Meetup Mailing Lists / Friends |
+
+## Minimum Viable Conference
+
+|What we needed|Where it came from|
+|--------------|------------------|
 |Code of Conduct | R-Ladies |
 |Snacks and Drinks | Costco |
 |Nametags | Office store |
 |Bartender | OHSU approved |
-|Childcare ||
+|Childcare | DivCare |
 
 
 ## Who does what?
@@ -145,7 +150,9 @@ plot(all_likert)
 > It would be great to have a keynote about ethics in data science.
 
 
-## What Went Well?
+## Cascadia R Users = Amazing!
+
+
 
 
 ## What Did We Learn? 
@@ -153,18 +160,7 @@ plot(all_likert)
 
 
 
-::::
+## What about Now?
 
-## A Minimum Viable Conference
+Conference has continued on and become something even more amazing
 
-What do you need?
-
-:::{.incremental}
-- A venue 
-- Speakers
-- An Audience
-- Code of Conduct
-- Snacks and Drinks 
-- Bartender
-- Places to Stay
-:::
