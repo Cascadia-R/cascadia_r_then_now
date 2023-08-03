@@ -13,7 +13,7 @@ highlight-style: a11y
 
 ```{r setup}
 library(tidyverse)
-responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - Form Responses 1.csv")
+responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - Form Responses 1.csv", na = "N/A")
 
 ```
 
@@ -53,22 +53,6 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 - Inclusive
 - Accessible
 - beeR
-:::
-
-::::
-
-## A Minimum Viable Conference
-
-What do you need?
-
-:::{.incremental}
-- A venue 
-- Speakers
-- An Audience
-- Code of Conduct
-- Snacks and Drinks 
-- Bartender
-- Places to Stay
 :::
 
 
@@ -124,28 +108,34 @@ What do you need?
 ```{r}
 #! warning: false
 
+
+levs=c(`1`="Strongly Disagree", `2`="Disagree", `3`="Neutral", `4`="Agree", `5`="Strongly Agree")
+
+
+
+
 responses_likert <- responses |>
   select(contains("Main")) |>
-  mutate(across(everything(), as.character)) |>
-  tidyr::pivot_longer(everything(), names_to = "category", values_to = "likert") |>
-  dplyr::filter(!likert == "N/A") |>
-  mutate(category=str_replace(category, "Main Conference Organization ", "")) |>
-#  mutate(category = factor(category)) |>
-  mutate(likert = factor(likert, levels=c("1", "2", "3", "4", "5"))) |>
-  mutate(boxcolor = case_when(likert %in% c(4,5) ~ "green",
-                   TRUE ~ "grey")) |>
-  filter(category %in% c("[Conference agenda overall]", "[Location/Meeting space]", "[Talk quality]", "[Snacks and drinks]"))
+  mutate(across(everything(), as.factor)) |>
+  mutate(id=row_number()) |>
+  tidyr::pivot_longer(cols=-id, names_to = "category", values_to = "likert") |>
+  mutate(likert=fct_recode(likert, "Strongly Disagree"="1", "Disagree"="2", "Neutral"="3", "Agree"="4", "Strongly Agree"="5")) |>
+  mutate(likert=ordered(likert)) |>
+  mutate(likert = fct_rev(likert)) |>
+  pivot_wider(id_cols = id, names_from=category, values_from = likert) |>
+  select(-id)
   
-  boxcol_vals <- c("green" = "orange", "grey" = "grey")
+colnames(responses_likert) <- c("Registration", "Location", "Wi-Fi","Agenda","Schedule", "Snacks/Drinks", "Talk Quality", "Keynote Topics")  
 
-responses_likert |>
-  ggplot() +
-  aes(x=likert, fill=boxcolor) +
-  scale_fill_manual(values=boxcol_vals,aesthetics = c("color", "fill"), drop=FALSE) +
-  geom_bar() +
-  facet_wrap(~category) +
-  theme(legend.position = "none", )
+#responses_likert <- janitor::clean_names(responses_likert)
+responses_likert <- as.data.frame(responses_likert)
+
+all_likert <- likert::likert(responses_likert)
+
+plot(all_likert)
+
 ```
+
 
 
 ## How did we do?
@@ -162,3 +152,21 @@ responses_likert |>
 
 ## What Did We Learn? 
 
+
+
+
+::::
+
+## A Minimum Viable Conference
+
+What do you need?
+
+:::{.incremental}
+- A venue 
+- Speakers
+- An Audience
+- Code of Conduct
+- Snacks and Drinks 
+- Bartender
+- Places to Stay
+:::
