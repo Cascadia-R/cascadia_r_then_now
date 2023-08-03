@@ -17,6 +17,11 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 
 ```
 
+## Answered Questions 
+
+- Can you organize a conference with just 6 people?
+- Should you volunteer for the next Cascadia-R?
+
 ## Outline
 
 - Then (How we started)
@@ -24,8 +29,9 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 - Next (What we hope for the future)
 - Secret Goal (DIY)
 
-## The origins
+# How we did it (2017-2018)
 
+## The origins
 
 :::: {.columns}
 
@@ -45,8 +51,8 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 ::::{.columns}
 :::{.column}
 - Home-Grown
-- Informal
-- Social
+- Informal vs. Academic
+- Social 
 :::
 
 :::{.column}
@@ -73,8 +79,9 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 |--------------|------------------|
 |A Venue | OHSU Collaborative Life Science Building |
 |Keynote Speaker | Gabriela Quieroz, IBM/R-Ladies/Vinay Prasad, OHSU |
-|Speakers | Call for presentations |
+|Speakers | Call for Presentations |
 |Audience | Meetup Mailing Lists / Friends |
+|Workshops | Call for Volunteers |
 
 ## Minimum Viable Conference
 
@@ -82,7 +89,6 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 |--------------|------------------|
 |Code of Conduct | R-Ladies |
 |Snacks and Drinks | Costco |
-|Nametags | Office store |
 |Bartender | OHSU approved |
 |Childcare | DivCare |
 
@@ -98,7 +104,7 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 
 ## 2017: 245 People Registered!
 
-![](images/IMG_4201.JPG)
+![Wide picture showing 245 people](images/IMG_4201.JPG)
 
 ## cRaggy: Visualizing Together
 
@@ -113,9 +119,7 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 ```{r}
 #! warning: false
 
-
 levs=c(`1`="Strongly Disagree", `2`="Disagree", `3`="Neutral", `4`="Agree", `5`="Strongly Agree")
-
 
 responses_likert <- responses |>
   select(contains("Main")) |>
@@ -135,7 +139,7 @@ responses_likert <- as.data.frame(responses_likert)
 
 all_likert <- likert::likert(responses_likert)
 
-plot(all_likert)
+plot(all_likert, main="Responses were very positive!")
 
 ```
 
@@ -157,10 +161,12 @@ plot(all_likert)
 
 ## What Did We Learn? 
 
+- 
+- 
+- 
 
-
-
-## What about Now?
+# What About Now?
 
 Conference has continued on and become something even more amazing
 
+# What About The Future?
