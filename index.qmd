@@ -112,8 +112,6 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 levs=c(`1`="Strongly Disagree", `2`="Disagree", `3`="Neutral", `4`="Agree", `5`="Strongly Agree")
 
 
-
-
 responses_likert <- responses |>
   select(contains("Main")) |>
   mutate(across(everything(), as.factor)) |>
