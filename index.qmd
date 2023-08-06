@@ -168,7 +168,7 @@ ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference
 
 ```
 
-## 2018!
+## 2018 - Even better!
 
 ```{r}
 #! warning: false
