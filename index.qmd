@@ -131,7 +131,12 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ## What Happened on the Big Day?
 
-- Lightning Talks: Scott was literally
+- Lightning Talks: Scott was literally updating website day of
+- 
+
+## Talks
+
+
 
 ## How did we do? Survey
 
@@ -247,7 +252,9 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 > Had a great time and glad I came! Thanks for keeping the coffee flowing.
 
-> 10/10 for enchantment!                                                                                                                                                                                                                                                    
+> 10/10 for enchantment!                                                                                            
+> I was seriously blown away. Of all the conferences I've been to over the years this was the most beneficial and well structured conference I've attended. It's an amazing deal that can't be beat!
+
 > Child care was great!  
 
 ## How did we do?
@@ -264,11 +271,22 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 
 
-## Cascadia R Attendees = Amazing!
+## The best thing is the friends we made along the way
 
 - Caitlin Hudon
 - Jacqueline Nolis
-- 
+- Sondra Stegenga
+- Dror Berel
+- Daniel Anderson
+- Ellis Hughes
+- David Severski
+- Meike Niederhausen
+
+## Lightning Talks
+
+> Amy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs
+
+> Jacqueline Nolis - Using deep learning in R to generate offensive license plates
 
 
 ## What Did We Learn? 

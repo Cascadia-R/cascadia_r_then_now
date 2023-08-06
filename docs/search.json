@@ -74,7 +74,7 @@
     "href": "index.html#how-did-we-do",
     "title": "Cascadia R Then/Now/Next",
     "section": "How did we do?",
-    "text": "How did we do?\n\nThe venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I’m having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills.\n\n\nAmazing conference! love the one day thing, the schedule, and the location!\n\n\nHad a great time and glad I came! Thanks for keeping the coffee flowing.\n\n\n10/10 for enchantment!\nChild care was great!"
+    "text": "How did we do?\n\nThe venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I’m having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills.\n\n\nAmazing conference! love the one day thing, the schedule, and the location!\n\n\nHad a great time and glad I came! Thanks for keeping the coffee flowing.\n\n\n10/10 for enchantment!\nI was seriously blown away. Of all the conferences I’ve been to over the years this was the most beneficial and well structured conference I’ve attended. It’s an amazing deal that can’t be beat!\n\n\nChild care was great!"
   },
   {
     "objectID": "index.html#how-did-we-do-1",
@@ -137,7 +137,7 @@
     "href": "index.html#what-happened-on-the-big-day",
     "title": "Cascadia R Then/Now/Next",
     "section": "What Happened on the Big Day?",
-    "text": "What Happened on the Big Day?\n\nLightning Talks: Scott was literally"
+    "text": "What Happened on the Big Day?\n\nLightning Talks: Scott was literally updating website day of"
   },
   {
     "objectID": "index.html#how-did-we-do-survey",
@@ -180,5 +180,26 @@
     "title": "Cascadia R Then/Now/Next",
     "section": "2018 - Even better!",
     "text": "2018 - Even better!"
+  },
+  {
+    "objectID": "index.html#talks",
+    "href": "index.html#talks",
+    "title": "Cascadia R Then/Now/Next",
+    "section": "Talks",
+    "text": "Talks"
+  },
+  {
+    "objectID": "index.html#the-best-thing-is-the-friends-we-made-along-the-way",
+    "href": "index.html#the-best-thing-is-the-friends-we-made-along-the-way",
+    "title": "Cascadia R Then/Now/Next",
+    "section": "The best thing is the friends we made along the way",
+    "text": "The best thing is the friends we made along the way\n\nCaitlin Hudon\nJacqueline Nolis\nSondra Stegenga\nDror Berel\nDaniel Anderson\nEllis Hughes\nDavid Severski\nMeike Niederhausen"
+  },
+  {
+    "objectID": "index.html#lightning-talks",
+    "href": "index.html#lightning-talks",
+    "title": "Cascadia R Then/Now/Next",
+    "section": "Lightning Talks",
+    "text": "Lightning Talks\n\nAmy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs\n\n\nJacqueline Nolis - Using deep learning in R to generate offensive license plates"
   }
 ]
