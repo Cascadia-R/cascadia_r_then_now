@@ -238,22 +238,40 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 ## How did we do?
 
+> The venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I'm having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills.
+
 > Amazing conference! love the one day thing, the schedule, and the location!
 
-> I think the cheap cost and central location really contributed to the crowd size. 
+> Had a great time and glad I came! Thanks for keeping the coffee flowing.
 
-> It would be great to have a keynote about ethics in data science.
+> 10/10 for enchantment!                                                                                                                                                                                                                                                    
+> Child care was great!  
+
+## How did we do?
+
+> I love this conference, it was absolutely a great use of my time  
+
+> y'all did a great job, thank you.
+
+> Please keep doing these conferences. They are valuable
+
+> Thank you so much for making this accessible/affordable to students!
+
+> I'd rate this conference 11/10 and look forward to attending again in future years.  
 
 
-## Cascadia R Users = Amazing!
 
+## Cascadia R Attendees = Amazing!
 
+- Caitlin Hudon
+- Jacqueline Nolis
+- 
 
 
 ## What Did We Learn? 
 
 - Volunteers are awesome and step up
-- 
+- A conference is all about the people
 - 
 
 # What About Now?
