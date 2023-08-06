@@ -13,8 +13,11 @@ highlight-style: a11y
 
 ```{r setup}
 library(tidyverse)
+library(ggstats)
+library(tidytext)
+library(wordcloud)
 responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - Form Responses 1.csv", na = "N/A")
-
+responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 - Form Responses 1.csv", na="N/A")
 ```
 
 ## Answered Questions 
@@ -64,12 +67,12 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 
 ## 2017: It was just 6 people
 
-- Chester
-- Jessica
-- John
-- Lilly
-- Scott
-- Ted
+- Chester (Drinks/Snacks/Workshops)
+- Jessica ()
+- John ()
+- Lilly (Code of Conduct/)
+- Scott (Website)
+- Ted (OHSU Logistics)
 
 - But we were an awesome team!
 
@@ -108,13 +111,29 @@ responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - 
 
 ## cRaggy: Visualizing Together
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 ![](images/IMG_4387.jpg)
+:::
+
+::: {.column width="50%"}
+- This is for fun
+- It is NOT about criticizing the original article or graph. 
+- Be supportive and kind to each other! 
+:::
+::::
 
 ## How far did people travel?
 
 ![Histogram of Distance](images/histogram-distance.png)
 
-## How did we do?
+## What Happened on the Big Day?
+
+- Lightning Talks: Scott was literally
+
+## How did we do? Survey
 
 ```{r}
 #! warning: false
@@ -130,19 +149,91 @@ responses_likert <- responses |>
   mutate(likert=ordered(likert)) |>
   mutate(likert = fct_rev(likert)) |>
   pivot_wider(id_cols = id, names_from=category, values_from = likert) |>
-  select(-id)
+  select(-id) |>
+  mutate(across(everything(), ~ factor(.x, levels = levs)))
   
 colnames(responses_likert) <- c("Registration", "Location", "Wi-Fi","Agenda","Schedule", "Snacks/Drinks", "Talk Quality", "Keynote Topics")  
 
+
+responses_likert <- responses_likert |> select(any_of(c( "Location", "Agenda","Schedule", "Talk Quality", "Keynote Topics", "Snacks/Drinks")))
+
 #responses_likert <- janitor::clean_names(responses_likert)
-responses_likert <- as.data.frame(responses_likert)
+responses_likert <- responses_likert <- as.data.frame(responses_likert)
 
-all_likert <- likert::likert(responses_likert)
+ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference! (n=59)", subtitle = "Not bad for 6 people!")
 
-plot(all_likert, main="Responses were very positive!")
+#all_likert <- likert::likert(responses_likert)
+
+#plot(all_likert, main="Responses were very positive!")
 
 ```
 
+```{r}
+#! warning: false
+
+levs=c(`1`="Strongly Disagree", `2`="Disagree", `3`="Neutral", `4`="Agree", `5`="Strongly Agree")
+
+responses_likert <- responses2 |>
+  select(contains("Main")) |>
+  mutate(across(everything(), as.factor)) |>
+  mutate(id=row_number()) |>
+  tidyr::pivot_longer(cols=-id, names_to = "category", values_to = "likert") |>
+  mutate(likert=fct_recode(likert, "Strongly Disagree"="1", "Disagree"="2", "Neutral"="3", "Agree"="4", "Strongly Agree"="5")) |>
+  mutate(likert=ordered(likert)) |>
+  mutate(likert = fct_rev(likert)) |>
+  pivot_wider(id_cols = id, names_from=category, values_from = likert) |>
+  select(-id) |>
+  mutate(across(everything(), ~ factor(.x, levels = levs)))
+  
+colnames(responses_likert) <- c("Registration", "Location", "Wi-Fi","Agenda","Schedule", "Snacks/Drinks", "Talk Quality", "Keynote Topics")  
+
+
+responses_likert <- responses_likert |> select(any_of(c( "Location", "Agenda","Schedule", "Talk Quality", "Keynote Topics", "Snacks/Drinks")))
+
+#responses_likert <- janitor::clean_names(responses_likert)
+responses_likert <- responses_likert <- as.data.frame(responses_likert)
+
+ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference! (n=76)")
+
+#all_likert <- likert::likert(responses_likert)
+
+#plot(all_likert, main="Responses were very positive!")
+
+```
+
+## How did we do? (2017)
+
+```{r}
+text_frame <- responses |> select(contains("what") | contains("additional")) |>
+  rename(favorite=`What were your favorite parts of the conference?`, improve=`What would you change or improve about the conference?`, etc=`Please add additional comments on the overall conference organization.`) |>
+  pivot_longer(everything(), names_to = "question", values_to = "answers") |>
+  #mutate(answers=str_replace(pattern = "workshop^", "workshops", answers)) |>
+  unnest_tokens("word", "answers") |>
+  anti_join(stop_words)
+
+tf_counts <- text_frame |> count(word, sort=TRUE)
+
+wordcloud(tf_counts$word, tf_counts$n, 
+          min.freq=3, random.order=FALSE)
+
+```
+
+## How did we do? (2018)
+
+```{r}
+text_frame <- responses2 |> select(contains("what") | contains("additional")) |>
+  rename(favorite=`What were your favorite parts of the conference?`, improve=`What would you change or improve about the conference?`, etc=`Please add additional comments on your overall conference experience.`) |>
+  pivot_longer(everything(), names_to = "question", values_to = "answers") |>
+  #mutate(answers=str_replace(pattern = "workshop^", "workshops", answers)) |>
+  unnest_tokens("word", "answers") |>
+  anti_join(stop_words)
+
+tf_counts <- text_frame |> count(word, sort=TRUE)
+
+wordcloud(tf_counts$word, tf_counts$n, 
+          min.freq=5, random.order=FALSE,colors = TRUE)
+
+```
 
 
 ## How did we do?
@@ -161,7 +252,7 @@ plot(all_likert, main="Responses were very positive!")
 
 ## What Did We Learn? 
 
-- 
+- Volunteers are awesome and step up
 - 
 - 
 
