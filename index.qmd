@@ -168,6 +168,8 @@ ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference
 
 ```
 
+## 2018!
+
 ```{r}
 #! warning: false
 
@@ -200,6 +202,7 @@ ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference
 #plot(all_likert, main="Responses were very positive!")
 
 ```
+
 
 ## How did we do? (2017)
 
