@@ -67,12 +67,12 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ## 2017: It was just 6 people
 
-- Chester (Drinks/Snacks/Workshops)
-- Jessica ()
-- John ()
-- Lilly (Code of Conduct/)
-- Scott (Website)
-- Ted (OHSU Logistics)
+- Chester 
+- Jessica 
+- John 
+- Lilly 
+- Scott 
+- Ted 
 
 - But we were an awesome team!
 
@@ -138,7 +138,14 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 
 
-## How did we do? Survey
+## Lightning Talks
+
+> Amy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs
+
+> Jacqueline Nolis - Using deep learning in R to generate offensive license plates
+
+
+## How did we do? (2017)
 
 ```{r}
 #! warning: false
@@ -271,23 +278,27 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 
 
-## The best thing is the friends we made along the way
+## Friends we made along the way
+
+:::: {.columns}
+
+::: {.column width="50%}
 
 - Caitlin Hudon
 - Jacqueline Nolis
 - Sondra Stegenga
 - Dror Berel
+
+:::
+
+::: {.column width="50%"}
 - Daniel Anderson
 - Ellis Hughes
 - David Severski
 - Meike Niederhausen
+:::
 
-## Lightning Talks
-
-> Amy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs
-
-> Jacqueline Nolis - Using deep learning in R to generate offensive license plates
-
+::::
 
 ## What Did We Learn? 
 

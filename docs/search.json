@@ -25,7 +25,7 @@
     "href": "index.html#it-was-just-6-people",
     "title": "Cascadia R Then/Now/Next",
     "section": "2017: It was just 6 people",
-    "text": "2017: It was just 6 people\n\nChester (Drinks/Snacks/Workshops)\nJessica ()\nJohn ()\nLilly (Code of Conduct/)\nScott (Website)\nTed (OHSU Logistics)\nBut we were an awesome team!"
+    "text": "2017: It was just 6 people\n\nChester\nJessica\nJohn\nLilly\nScott\nTed\nBut we were an awesome team!"
   },
   {
     "objectID": "index.html#minimum-viable-conference",
@@ -201,5 +201,96 @@
     "title": "Cascadia R Then/Now/Next",
     "section": "Lightning Talks",
     "text": "Lightning Talks\n\nAmy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs\n\n\nJacqueline Nolis - Using deep learning in R to generate offensive license plates"
+  },
+  {
+    "objectID": "blah/blah.html#image-right",
+    "href": "blah/blah.html#image-right",
+    "title": "letterbox slides",
+    "section": ".image-right",
+    "text": ".image-right\n\n\nWe can use the .image-right and .image-left classes to insert images in the background\nThese images will be placed behind most other content"
+  },
+  {
+    "objectID": "blah/blah.html#image-left",
+    "href": "blah/blah.html#image-left",
+    "title": "letterbox slides",
+    "section": ".image-left",
+    "text": ".image-left\n\n\n\n\nIt is therefore recommened that you use multiple columns to only have text on the background area"
+  },
+  {
+    "objectID": "blah/blah.html#section",
+    "href": "blah/blah.html#section",
+    "title": "letterbox slides",
+    "section": "",
+    "text": "background images"
+  },
+  {
+    "objectID": "blah/blah.html#setting-background-colors",
+    "href": "blah/blah.html#setting-background-colors",
+    "title": "letterbox slides",
+    "section": "Setting background colors",
+    "text": "Setting background colors\nyou can set your background as you normally would"
+  },
+  {
+    "objectID": "blah/blah.html#video-slide-title",
+    "href": "blah/blah.html#video-slide-title",
+    "title": "letterbox slides",
+    "section": "Video Slide Title",
+    "text": "Video Slide Title\nThis slides’s background video will play in a loop with audio muted."
+  },
+  {
+    "objectID": "blah/blah.html#slide-title",
+    "href": "blah/blah.html#slide-title",
+    "title": "letterbox slides",
+    "section": "Slide Title",
+    "text": "Slide Title"
+  },
+  {
+    "objectID": "blah/blah.html#further-modifying-theme",
+    "href": "blah/blah.html#further-modifying-theme",
+    "title": "letterbox slides",
+    "section": "Further Modifying theme",
+    "text": "Further Modifying theme\nIf you want to modify theme, you can specify the .scss my modifying the yaml to look like this\nformat: \n  letterbox-revealjs:\n    theme: [default, style.scss]"
+  },
+  {
+    "objectID": "blah/blah.html#modifying-letterbox-background",
+    "href": "blah/blah.html#modifying-letterbox-background",
+    "title": "letterbox slides",
+    "section": "Modifying letterbox background",
+    "text": "Modifying letterbox background\nThe background colors can be with with, where #444444 represents the new background color and #222222 represents the color of the shadow\n.quarto-light {\n  background-color: #444444;\n}\n\n.quarto-dark {\n  background-color: #444444;\n}\n\n.slides {\n  box-shadow: #222222 0px 0px 30px 0px;\n}"
+  },
+  {
+    "objectID": "blah/blah.html#quarto",
+    "href": "blah/blah.html#quarto",
+    "title": "letterbox slides",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
+  },
+  {
+    "objectID": "blah/blah.html#bullets",
+    "href": "blah/blah.html#bullets",
+    "title": "letterbox slides",
+    "section": "Bullets",
+    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+  },
+  {
+    "objectID": "blah/blah.html#code",
+    "href": "blah/blah.html#code",
+    "title": "letterbox slides",
+    "section": "Code",
+    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#how-did-we-do-2017-1",
+    "href": "index.html#how-did-we-do-2017-1",
+    "title": "Cascadia R Then/Now/Next",
+    "section": "How did we do? (2017)",
+    "text": "How did we do? (2017)"
+  },
+  {
+    "objectID": "index.html#friends-we-made-along-the-way",
+    "href": "index.html#friends-we-made-along-the-way",
+    "title": "Cascadia R Then/Now/Next",
+    "section": "Friends we made along the way",
+    "text": "Friends we made along the way\n\n\n\nCaitlin Hudon\nJacqueline Nolis\nSondra Stegenga\nDror Berel\n\n\n\nDaniel Anderson\nEllis Hughes\nDavid Severski\nMeike Niederhausen"
   }
 ]

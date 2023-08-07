@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.433">
 
-  <meta name="author" content="John David Smith">
-  <meta name="author" content="Jessica Minnier">
-  <meta name="author" content="Ted Laderas">
-  <meta name="dcterms.date" content="2023-08-19">
-  <title>pitt_keynote - Cascadia R Then/Now/Next</title>
+  <title>pitt_keynote - letterbox slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -32,12 +28,77 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
-  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -246,7 +307,6 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
-      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -329,296 +389,93 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Cascadia R Then/Now/Next</h1>
+  <h1 class="title">letterbox slides</h1>
+  <p class="subtitle">quarto-revealjs-letterbox</p>
 
 <div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-John David Smith 
-</div>
-</div>
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Jessica Minnier 
-</div>
-</div>
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Ted Laderas 
-</div>
-</div>
 </div>
 
-  <p class="date">2023-08-19</p>
 </section>
-<section id="answered-questions" class="slide level2">
-<h2>Answered Questions</h2>
-<ul>
-<li>Can you organize a conference with just 6 people?</li>
-<li>Should you volunteer for the next Cascadia-R?</li>
-</ul>
-</section>
-<section id="outline" class="slide level2">
-<h2>Outline</h2>
-<ul>
-<li>Then (How we started)</li>
-<li>Now (How the conf has evolved)</li>
-<li>Next (What we hope for the future)</li>
-<li>Secret Goal (DIY)</li>
-</ul>
-</section>
-<section>
-<section id="how-we-did-it-2017-2018" class="title-slide slide level1 center">
-<h1>How we did it (2017-2018)</h1>
-
-</section>
-<section id="the-origins" class="slide level2">
-<h2>The origins</h2>
+<section id="image-right" class="slide level2">
+<h2>.image-right</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/gigantic.jpg"></p>
-<figcaption>Gigantic Brewery</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Over Beer at Gigantic Brewery</li>
-<li>An excuse to bring Charlotte Wickham to Portland</li>
-</ul>
+<div class="column" style="width:45%;">
+<p>We can use the <code>.image-right</code> and <code>.image-left</code> classes to insert images in the background</p>
+<p>These images will be placed behind most other content</p>
 </div>
 </div>
-</section>
-<section id="our-values" class="slide level2">
-<h2>Our Values</h2>
+
+<img data-src="flowers-two.jpeg" class="image-right r-stretch"></section>
+<section id="image-left" class="slide level2" style="text-align: right;">
+<h2>.image-left</h2>
 <div class="columns">
-<div class="column">
-<ul>
-<li>Home-Grown</li>
-<li>Informal vs.&nbsp;Academic</li>
-<li>Social</li>
-</ul>
-</div><div class="column">
-<ul>
-<li>Inclusive</li>
-<li>Accessible</li>
-<li>beeR</li>
-</ul>
+<div class="column" style="width:55%;">
+
+</div><div class="column" style="width:45%;">
+<p>It is therefore recommened that you use <a href="https://quarto.org/docs/presentations/index.html#multiple-columns">multiple columns</a> to only have text on the background area</p>
 </div>
 </div>
-</section>
-<section id="it-was-just-6-people" class="slide level2">
-<h2>2017: It was just 6 people</h2>
-<ul>
-<li><p>Chester</p></li>
-<li><p>Jessica</p></li>
-<li><p>John</p></li>
-<li><p>Lilly</p></li>
-<li><p>Scott</p></li>
-<li><p>Ted</p></li>
-<li><p>But we were an awesome team!</p></li>
-</ul>
-</section>
-<section id="minimum-viable-conference" class="slide level2">
-<h2>Minimum Viable Conference</h2>
-<table>
-<thead>
-<tr class="header">
-<th>What we needed</th>
-<th>Where it came from</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A Venue</td>
-<td>OHSU Collaborative Life Science Building</td>
-</tr>
-<tr class="even">
-<td>Keynote Speaker</td>
-<td>Gabriela Quieroz, IBM/R-Ladies/Vinay Prasad, OHSU</td>
-</tr>
-<tr class="odd">
-<td>Speakers</td>
-<td>Call for Presentations</td>
-</tr>
-<tr class="even">
-<td>Audience</td>
-<td>Meetup Mailing Lists / Friends</td>
-</tr>
-<tr class="odd">
-<td>Workshops</td>
-<td>Call for Volunteers</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="minimum-viable-conference-1" class="slide level2">
-<h2>Minimum Viable Conference</h2>
-<table>
-<thead>
-<tr class="header">
-<th>What we needed</th>
-<th>Where it came from</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Code of Conduct</td>
-<td>R-Ladies</td>
-</tr>
-<tr class="even">
-<td>Snacks and Drinks</td>
-<td>Costco</td>
-</tr>
-<tr class="odd">
-<td>Bartender</td>
-<td>OHSU approved</td>
-</tr>
-<tr class="even">
-<td>Childcare</td>
-<td>DivCare</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="who-does-what" class="slide level2">
-<h2>Who does what?</h2>
 
-<img data-src="images/trello.png" class="r-stretch quarto-figure-center"><p class="caption">Trello Board</p></section>
-<section id="who-gets-to-talk" class="slide level2">
-<h2>Who Gets to Talk?</h2>
-
-<img data-src="images/talk-proposals.jpg" class="r-stretch quarto-figure-center"><p class="caption">Distribution. of Talk Proposal Scores</p></section>
-<section id="people-registered" class="slide level2">
-<h2>2017: 245 People Registered!</h2>
-
-<img data-src="images/IMG_4201.JPG" class="r-stretch quarto-figure-center"><p class="caption">Wide picture showing 245 people</p></section>
-<section id="craggy-visualizing-together" class="slide level2">
-<h2>cRaggy: Visualizing Together</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/IMG_4387.jpg"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>This is for fun</li>
-<li>It is NOT about criticizing the original article or graph.</li>
-<li>Be supportive and kind to each other!</li>
-</ul>
-</div>
+<img data-src="flowers-two.jpeg" class="image-left r-stretch"></section>
+<section id="section" class="slide level2" data-background-image="https://placekitten.com/100/100" data-background-size="100px" data-background-repeat="repeat">
+<h2></h2>
+<div class="r-fit-text">
+<p><span style="color: hotpink;">background images</span></p>
 </div>
 </section>
-<section id="how-far-did-people-travel" class="slide level2">
-<h2>How far did people travel?</h2>
-
-<img data-src="images/histogram-distance.png" class="r-stretch quarto-figure-center"><p class="caption">Histogram of Distance</p></section>
-<section id="what-happened-on-the-big-day" class="slide level2">
-<h2>What Happened on the Big Day?</h2>
+<section id="setting-background-colors" class="slide level2" data-background-color="aquamarine">
+<h2>Setting background colors</h2>
+<p>you can set your background as you normally would</p>
+</section>
+<section id="video-slide-title" class="slide level2" data-background-video="video.mp4" data-background-video-loop="true" data-background-video-muted="true">
+<h2>Video Slide Title</h2>
+<p>This slides’s background video will play in a loop with audio muted.</p>
+</section>
+<section id="slide-title" class="slide level2" data-background-iframe="https://example.com">
+<h2>Slide Title</h2>
+</section>
+<section id="further-modifying-theme" class="slide level2">
+<h2>Further Modifying theme</h2>
+<p>If you want to modify theme, you can specify the <code>.scss</code> my modifying the yaml to look like this</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">letterbox-revealjs</span><span class="kw">:</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">default</span><span class="kw">,</span><span class="at"> style.scss</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="modifying-letterbox-background" class="slide level2">
+<h2>Modifying letterbox background</h2>
+<p>The background colors can be with with, where <code>#444444</code> represents the new background color and <code>#222222</code> represents the color of the shadow</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">.quarto-light</span> {</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="kw">background-color</span>: <span class="cn">#444444</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>}</span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">.quarto-dark</span> {</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="kw">background-color</span>: <span class="cn">#444444</span><span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>}</span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="fu">.slides</span> {</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  <span class="kw">box-shadow</span>: <span class="cn">#222222</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">30</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="quarto" class="slide level2">
+<h2>Quarto</h2>
+<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
+</section>
+<section id="bullets" class="slide level2">
+<h2>Bullets</h2>
+<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
 <ul>
-<li>Lightning Talks: Scott was literally updating website day of</li>
-<li></li>
+<li>Content authored with markdown</li>
+<li>Output from executable code</li>
 </ul>
 </section>
-<section id="talks" class="slide level2">
-<h2>Talks</h2>
-</section>
-<section id="lightning-talks" class="slide level2">
-<h2>Lightning Talks</h2>
-<blockquote>
-<p>Amy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs</p>
-</blockquote>
-<blockquote>
-<p>Jacqueline Nolis - Using deep learning in R to generate offensive license plates</p>
-</blockquote>
-</section>
-<section id="how-did-we-do-2017" class="slide level2">
-<h2>How did we do? (2017)</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
-<section id="even-better" class="slide level2">
-<h2>2018 - Even better!</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
-<section id="how-did-we-do-2017-1" class="slide level2">
-<h2>How did we do? (2017)</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
-<section id="how-did-we-do-2018" class="slide level2">
-<h2>How did we do? (2018)</h2>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
-<section id="how-did-we-do" class="slide level2">
-<h2>How did we do?</h2>
-<blockquote>
-<p>The venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I’m having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills.</p>
-</blockquote>
-<blockquote>
-<p>Amazing conference! love the one day thing, the schedule, and the location!</p>
-</blockquote>
-<blockquote>
-<p>Had a great time and glad I came! Thanks for keeping the coffee flowing.</p>
-</blockquote>
-<blockquote>
-<p>10/10 for enchantment!<br>
-I was seriously blown away. Of all the conferences I’ve been to over the years this was the most beneficial and well structured conference I’ve attended. It’s an amazing deal that can’t be beat!</p>
-</blockquote>
-<blockquote>
-<p>Child care was great!</p>
-</blockquote>
-</section>
-<section id="how-did-we-do-1" class="slide level2">
-<h2>How did we do?</h2>
-<blockquote>
-<p>I love this conference, it was absolutely a great use of my time</p>
-</blockquote>
-<blockquote>
-<p>y’all did a great job, thank you.</p>
-</blockquote>
-<blockquote>
-<p>Please keep doing these conferences. They are valuable</p>
-</blockquote>
-<blockquote>
-<p>Thank you so much for making this accessible/affordable to students!</p>
-</blockquote>
-<blockquote>
-<p>I’d rate this conference 11/10 and look forward to attending again in future years.</p>
-</blockquote>
-</section>
-<section id="friends-we-made-along-the-way" class="slide level2">
-<h2>Friends we made along the way</h2>
-<div class="columns">
-<div class="column" style="width:&quot;50%;">
-<ul>
-<li>Caitlin Hudon</li>
-<li>Jacqueline Nolis</li>
-<li>Sondra Stegenga</li>
-<li>Dror Berel</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Daniel Anderson</li>
-<li>Ellis Hughes</li>
-<li>David Severski</li>
-<li>Meike Niederhausen</li>
-</ul>
+<section id="code" class="slide level2">
+<h2>Code</h2>
+<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
 </div>
 </div>
-</section>
-<section id="what-did-we-learn" class="slide level2">
-<h2>What Did We Learn?</h2>
-<ul>
-<li>Volunteers are awesome and step up</li>
-<li>A conference is all about the people</li>
-<li></li>
-</ul>
-</section></section>
-<section id="what-about-now" class="title-slide slide level1 center">
-<h1>What About Now?</h1>
-<p>Conference has continued on and become something even more amazing</p>
-</section>
-
-<section id="what-about-the-future" class="title-slide slide level1 center">
-<h1>What About The Future?</h1>
 
 <div class="footer footer-default">
 
@@ -628,19 +485,19 @@ I was seriously blown away. Of all the conferences I’ve been to over the years
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -778,7 +635,7 @@ I was seriously blown away. Of all the conferences I’ve been to over the years
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: true,
+        previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'none',
@@ -835,6 +692,142 @@ I was seriously blown away. Of all the conferences I’ve been to over the years
         ]
       });
     </script>
+    <script>
+    // Copy over background colors to new div
+    divs = document.querySelectorAll('[data-background-color]');
+
+    Array.from(divs).map(function (x) {
+      const color = x.dataset.backgroundColor;
+
+      var new_div = document.createElement('div');
+      new_div.setAttribute("class", "background-color-div");
+      new_div.style.backgroundColor = color;
+      x.appendChild(new_div);
+      x.removeAttribute("data-background-color");
+    })
+
+    // Remove background colors from backgrounds div
+    Array.from(
+      document.querySelectorAll("[data-background-hash]")
+    ).map(function (x) {
+      x.removeAttribute("data-background-hash");
+      x.style.backgroundColor = null;
+    })
+    </script>
+
+    <script>
+    // Copy over background images to new div
+    divs = document.querySelectorAll('[data-background-image]');
+
+    Array.from(divs).map(function (x) {
+      var new_div = document.createElement('div');
+      new_div.setAttribute("class", "background-image-div");
+
+      if (x.dataset.backgroundImage != undefined) {
+        new_div.style.backgroundImage = "url(" + x.dataset.backgroundImage + ")";
+        x.removeAttribute("data-background-image");
+      }
+      if (x.dataset.backgroundSize != undefined) {
+        new_div.style.backgroundSize = x.dataset.backgroundSize;
+        x.removeAttribute("data-background-size");
+      }
+      if (x.dataset.backgroundPosition != undefined) {
+        new_div.style.backgroundPosition = x.dataset.backgroundPosition;
+        x.removeAttribute("data-background-position");
+      }
+      if (x.dataset.backgroundRepeat != undefined) {
+        new_div.style.backgroundRepeat = x.dataset.backgroundRepeat;
+        x.removeAttribute("data-background-repeat");
+      }
+      if (x.dataset.backgroundOpacity != undefined) {
+        new_div.style.backgroundOpacity = x.dataset.backgroundOpacity;
+        x.removeAttribute("data-background-opacity");
+      }
+
+      x.appendChild(new_div);
+    })
+    </script>
+
+    <script>
+    // Copy over background vidoes
+
+    // Run once when we load
+    var video_div = document.querySelectorAll(".backgrounds video");
+    var slide_div = document.querySelectorAll("[data-background-video]");
+
+    for (let i = 0; i < video_div.length; i++) {
+      video_div[i].setAttribute("class", "background-video-div");
+
+      slide_div[i].appendChild(video_div[i]);
+      slide_div[i].removeAttribute("data-background-video");
+    }
+
+    Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
+
+    // Each time we advance slides, as the background videos aren't loaded
+    // unless they are a few slides away
+    Reveal.on('slidechanged', event => {
+      var video_div = document.querySelectorAll(".backgrounds video");
+      var slide_div = document.querySelectorAll("[data-background-video]");
+
+      for (let i = 0; i < video_div.length; i++) {
+        video_div[i].setAttribute("class", "background-video-div");
+
+        slide_div[i].appendChild(video_div[i]);
+        slide_div[i].removeAttribute("data-background-video");
+      }
+
+      Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
+    });
+    </script>
+
+    <script>
+    // Copy over background vidoes
+
+    // Run once when we load
+    var iframe_div = document.querySelectorAll(".backgrounds iframe");
+    var slide_div = document.querySelectorAll("[data-background-iframe]");
+
+    for (let i = 0; i < iframe_div.length; i++) {
+      iframe_div[i].setAttribute("class", "background-iframe-div");
+
+      slide_div[i].appendChild(iframe_div[i]);
+      slide_div[i].removeAttribute("data-background-iframe");
+    }
+
+    // Each time we advance slides, as the background videos aren't loaded
+    // unless they are a few slides away
+    Reveal.on('slidechanged', event => {
+      var iframe_div = document.querySelectorAll(".backgrounds iframe");
+      var slide_div = document.querySelectorAll("[data-background-iframe]");
+
+      for (let i = 0; i < iframe_div.length; i++) {
+        iframe_div[i].setAttribute("class", "background-iframe-div");
+
+        slide_div[i].appendChild(iframe_div[i]);
+        slide_div[i].removeAttribute("data-background-iframe");
+      }
+    });
+    </script>
+
+    <script>
+    // Clean up slide background styles
+    divs = document.querySelectorAll('.slide-background-content');
+    Array.from(divs).map(function (x) {
+      x.style = null;
+    })
+    </script>
+
+    <script>
+    // Move menu button
+    menu_div = document.querySelector(".slide-menu-button");
+    document.querySelector(".slides").appendChild(menu_div);
+
+    // Move progress bar
+    menu_div = document.querySelector(".progress");
+    document.querySelector(".slides").appendChild(menu_div);
+    </script>
+
     
     <script>
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
