@@ -1,9 +1,15 @@
 ---
-title: "Cascadia R Then/Now/Next"
-author: ["John David Smith", "Jessica Minnier", "Ted Laderas"]
+title: "Cascadia-R"
+subtitle: "Then/Now/Next"
+author: ["Jessica Minnier", "Ted Laderas"]
 date: 08/19/2023
 format: 
   revealjs:
+    #css: [custom.css, hex.css, timeline.css]
+    progress: false
+    menu: false
+    width: 1280
+    height: 720
     preview-links: true
     standalone: true
     scrollable: true
@@ -72,7 +78,8 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - John 
 - Lilly 
 - Scott 
-- Ted 
+- Ted
+- Aaron (2018)
 
 - But we were an awesome team!
 
@@ -282,7 +289,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 :::: {.columns}
 
-::: {.column width="50%}
+::: {.column width="50%"}
 
 - Caitlin Hudon
 - Jacqueline Nolis
@@ -304,10 +311,21 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 - Volunteers are awesome and step up
 - A conference is all about the people
-- 
+
 
 # What About Now?
 
 Conference has continued on and become something even more amazing
 
+##
+
+
+
 # What About The Future?
+
+## Answers to the Questions
+
+- Can you organize a conference with just 6 people?
+  - Hell Yeah!
+- Should you volunteer for the next Cascadia R?
+  - Hell Yeah!

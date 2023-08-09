@@ -25,7 +25,7 @@
     "href": "index.html#it-was-just-6-people",
     "title": "Cascadia-R",
     "section": "2017: It was just 6 people",
-    "text": "2017: It was just 6 people\n\nChester\nJessica\nJohn\nLilly\nScott\nTed\nBut we were an awesome team!"
+    "text": "2017: It was just 6 people\n\nChester\nJessica\nJohn\nLilly\nScott\nTed\nAaron (2018)\nBut we were an awesome team!"
   },
   {
     "objectID": "index.html#minimum-viable-conference",
@@ -170,9 +170,9 @@
   {
     "objectID": "index.html#section",
     "href": "index.html#section",
-    "title": "Cascadia R Then/Now/Next",
-    "section": "2018!",
-    "text": "2018!"
+    "title": "Cascadia-R",
+    "section": "",
+    "text": "Portland, OR ::: {.timeline-details .fragment .fade-out fragment-index=1}\n\n\n2017\n\n\n\n\n\n\n\n\nPortland, OR ::: {.timeline-details .fragment .fade-out fragment-index=2}\n\n\n2018\n\n\n\n\n\n\n\n\nBellevue, WA\n\n\n\n\n2020\n\n\n\n\n\n\n\n\nCancelled due to COVID\n\n\n\n\n2021\n\n\n\n\n\n\n\n\nEaro creates the tsibble package\n\n As part of her PhD, Earo creates tsibble - a rectangular and tidyverse compatible time series data alternative to ts().\n\n\nJul 2017\n\n\n\n\n\n\n\n\nMitchell creates the fable package\n\n Building upon tsibble, I create fable - the tidy time series forecasting successor to the forecast package.\n\n\nFeb 2018\n\n\n\n\n\n\n\n\nThe forecast package is retired\n\nStill maintained, but no new features.\n\n\nSep 2019\n\n\n\n::: :::\n::: :::"
   },
   {
     "objectID": "index.html#even-better",

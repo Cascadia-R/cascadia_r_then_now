@@ -10,7 +10,6 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.433">
 
-  <meta name="author" content="John David Smith">
   <meta name="author" content="Jessica Minnier">
   <meta name="author" content="Ted Laderas">
   <meta name="dcterms.date" content="2023-08-19">
@@ -34,9 +33,6 @@
     }
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
-  <link rel="stylesheet" href="custom.css">
-  <link rel="stylesheet" href="hex.css">
-  <link rel="stylesheet" href="timeline.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -338,11 +334,6 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-John David Smith 
-</div>
-</div>
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
 Jessica Minnier 
 </div>
 </div>
@@ -421,6 +412,7 @@ Ted Laderas
 <li><p>Lilly</p></li>
 <li><p>Scott</p></li>
 <li><p>Ted</p></li>
+<li><p>Aaron (2018)</p></li>
 <li><p>But we were an awesome team!</p></li>
 </ul>
 </section>
@@ -614,6 +606,19 @@ I was seriously blown away. Of all the conferences I’ve been to over the years
 <li>Volunteers are awesome and step up</li>
 <li>A conference is all about the people</li>
 </ul>
+</section></section>
+<section>
+<section id="what-about-now" class="title-slide slide level1 center">
+<h1>What About Now?</h1>
+<p>Conference has continued on and become something even more amazing</p>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+</section></section>
+<section>
+<section id="what-about-the-future" class="title-slide slide level1 center">
+<h1>What About The Future?</h1>
+
 </section>
 <section id="answers-to-the-questions" class="slide level2">
 <h2>Answers to the Questions</h2>
@@ -627,19 +632,11 @@ I was seriously blown away. Of all the conferences I’ve been to over the years
 <li>Hell Yeah!</li>
 </ul></li>
 </ul>
-</section></section>
-<section id="what-about-now" class="title-slide slide level1 center">
-<h1>What About Now?</h1>
-<p>Conference has continued on and become something even more amazing</p>
-</section>
-
-<section id="what-about-the-future" class="title-slide slide level1 center">
-<h1>What About The Future?</h1>
 
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -851,142 +848,6 @@ I was seriously blown away. Of all the conferences I’ve been to over the years
         ]
       });
     </script>
-    <script>
-    // Copy over background colors to new div
-    divs = document.querySelectorAll('[data-background-color]');
-
-    Array.from(divs).map(function (x) {
-      const color = x.dataset.backgroundColor;
-
-      var new_div = document.createElement('div');
-      new_div.setAttribute("class", "background-color-div");
-      new_div.style.backgroundColor = color;
-      x.appendChild(new_div);
-      x.removeAttribute("data-background-color");
-    })
-
-    // Remove background colors from backgrounds div
-    Array.from(
-      document.querySelectorAll("[data-background-hash]")
-    ).map(function (x) {
-      x.removeAttribute("data-background-hash");
-      x.style.backgroundColor = null;
-    })
-    </script>
-
-    <script>
-    // Copy over background images to new div
-    divs = document.querySelectorAll('[data-background-image]');
-
-    Array.from(divs).map(function (x) {
-      var new_div = document.createElement('div');
-      new_div.setAttribute("class", "background-image-div");
-
-      if (x.dataset.backgroundImage != undefined) {
-        new_div.style.backgroundImage = "url(" + x.dataset.backgroundImage + ")";
-        x.removeAttribute("data-background-image");
-      }
-      if (x.dataset.backgroundSize != undefined) {
-        new_div.style.backgroundSize = x.dataset.backgroundSize;
-        x.removeAttribute("data-background-size");
-      }
-      if (x.dataset.backgroundPosition != undefined) {
-        new_div.style.backgroundPosition = x.dataset.backgroundPosition;
-        x.removeAttribute("data-background-position");
-      }
-      if (x.dataset.backgroundRepeat != undefined) {
-        new_div.style.backgroundRepeat = x.dataset.backgroundRepeat;
-        x.removeAttribute("data-background-repeat");
-      }
-      if (x.dataset.backgroundOpacity != undefined) {
-        new_div.style.backgroundOpacity = x.dataset.backgroundOpacity;
-        x.removeAttribute("data-background-opacity");
-      }
-
-      x.appendChild(new_div);
-    })
-    </script>
-
-    <script>
-    // Copy over background vidoes
-
-    // Run once when we load
-    var video_div = document.querySelectorAll(".backgrounds video");
-    var slide_div = document.querySelectorAll("[data-background-video]");
-
-    for (let i = 0; i < video_div.length; i++) {
-      video_div[i].setAttribute("class", "background-video-div");
-
-      slide_div[i].appendChild(video_div[i]);
-      slide_div[i].removeAttribute("data-background-video");
-    }
-
-    Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
-
-    // Each time we advance slides, as the background videos aren't loaded
-    // unless they are a few slides away
-    Reveal.on('slidechanged', event => {
-      var video_div = document.querySelectorAll(".backgrounds video");
-      var slide_div = document.querySelectorAll("[data-background-video]");
-
-      for (let i = 0; i < video_div.length; i++) {
-        video_div[i].setAttribute("class", "background-video-div");
-
-        slide_div[i].appendChild(video_div[i]);
-        slide_div[i].removeAttribute("data-background-video");
-      }
-
-      Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
-    });
-    </script>
-
-    <script>
-    // Copy over background vidoes
-
-    // Run once when we load
-    var iframe_div = document.querySelectorAll(".backgrounds iframe");
-    var slide_div = document.querySelectorAll("[data-background-iframe]");
-
-    for (let i = 0; i < iframe_div.length; i++) {
-      iframe_div[i].setAttribute("class", "background-iframe-div");
-
-      slide_div[i].appendChild(iframe_div[i]);
-      slide_div[i].removeAttribute("data-background-iframe");
-    }
-
-    // Each time we advance slides, as the background videos aren't loaded
-    // unless they are a few slides away
-    Reveal.on('slidechanged', event => {
-      var iframe_div = document.querySelectorAll(".backgrounds iframe");
-      var slide_div = document.querySelectorAll("[data-background-iframe]");
-
-      for (let i = 0; i < iframe_div.length; i++) {
-        iframe_div[i].setAttribute("class", "background-iframe-div");
-
-        slide_div[i].appendChild(iframe_div[i]);
-        slide_div[i].removeAttribute("data-background-iframe");
-      }
-    });
-    </script>
-
-    <script>
-    // Clean up slide background styles
-    divs = document.querySelectorAll('.slide-background-content');
-    Array.from(divs).map(function (x) {
-      x.style = null;
-    })
-    </script>
-
-    <script>
-    // Move menu button
-    menu_div = document.querySelector(".slide-menu-button");
-    document.querySelector(".slides").appendChild(menu_div);
-
-    // Move progress bar
-    menu_div = document.querySelector(".progress");
-    document.querySelector(".slides").appendChild(menu_div);
-    </script>
-
     
     <script>
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
