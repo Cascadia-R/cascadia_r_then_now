@@ -29,6 +29,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ## Answered Questions 
 
 - Can you organize a conference with just 6 people?
+- What is the Cascadia Community Like?
 - Should you volunteer for the next Cascadia-R?
 
 ## Outline
@@ -36,7 +37,6 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Then (How we started)
 - Now (How the conf has evolved)
 - Next (What we hope for the future)
-- Secret Goal (DIY)
 
 # How we did it (2017-2018)
 
@@ -50,7 +50,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ::: {.column width="50%"}
 - Over Beer at Gigantic Brewery
-- An excuse to bring Charlotte Wickham to Portland
+- Wanting to bring people together
 :::
 
 ::::
@@ -73,17 +73,25 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ## 2017: It was just 6 people
 
+::::{.columns}
+:::{.column}
 - Chester 
 - Jessica 
 - John 
 - Lilly 
+:::
+
+:::{.column}
 - Scott 
 - Ted
 - Aaron (2018)
+:::
+::::
+
 
 - But we were an awesome team!
 
-## Minimum Viable Conference
+## Plan for a Minimum Viable Conference
 
 |What we needed|Where it came from|
 |--------------|------------------|
@@ -103,6 +111,13 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 |Childcare | DivCare |
 
 
+## Venue: OHSU Collaborative Life Sciences Building
+
+- Med school student classroom
+- Lots of Outlets
+- Fast Internet
+- Lots of begging on my part
+
 ## Who does what?
 
 ![Trello Board](images/trello.png)
@@ -115,6 +130,47 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ## 2017: 245 People Registered!
 
 ![Wide picture showing 245 people](images/IMG_4201.JPG)
+
+
+
+## How far did people travel?
+
+![Histogram of Distance](images/histogram-distance.png)
+
+## What Happened on the Big Day?
+
+- Chaos (In a good way)
+- Agenda: Scott was literally updating website day of
+- 
+
+## Talks
+
+> Lisa Karstens- Microbial community analysis in R
+
+> Amelia Abreu - Improving the Developer Experience
+
+> Daniel Anderson	-	Contribute to Open Source with Pretty Slides  
+
+
+## Lightning Talks
+
+> Amy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs
+
+> Jacqueline Nolis - Using deep learning in R to generate offensive license plates
+
+> Caitlin Hudon	R-Ladies - NULL: When Missing Data is Valuable
+
+
+## Workshops
+
+- gRadual intRoduction to Tidyverse
+- 
+
+## beeR
+
+- Painful logistically but worth it
+- 
+
 
 ## cRaggy: Visualizing Together
 
@@ -131,25 +187,6 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Be supportive and kind to each other! 
 :::
 ::::
-
-## How far did people travel?
-
-![Histogram of Distance](images/histogram-distance.png)
-
-## What Happened on the Big Day?
-
-- Lightning Talks: Scott was literally updating website day of
-- 
-
-## Talks
-
-
-
-## Lightning Talks
-
-> Amy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs
-
-> Jacqueline Nolis - Using deep learning in R to generate offensive license plates
 
 
 ## How did we do? (2017)
@@ -260,8 +297,6 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 ## How did we do?
 
-> The venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I'm having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills.
-
 > Amazing conference! love the one day thing, the schedule, and the location!
 
 > Had a great time and glad I came! Thanks for keeping the coffee flowing.
@@ -270,6 +305,9 @@ wordcloud(tf_counts$word, tf_counts$n,
 > I was seriously blown away. Of all the conferences I've been to over the years this was the most beneficial and well structured conference I've attended. It's an amazing deal that can't be beat!
 
 > Child care was great!  
+
+> The venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I'm having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills.
+
 
 ## How did we do?
 
