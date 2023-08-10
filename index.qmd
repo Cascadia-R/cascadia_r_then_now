@@ -62,6 +62,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Home-Grown
 - Informal vs. Academic
 - Social 
+- Local people do awesome R Things
 :::
 
 :::{.column}
@@ -71,7 +72,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 :::
 ::::
 
-## 2017: It was just 6 people
+## 2017-2018: It was just 6/7 people
 
 ::::{.columns}
 :::{.column}
@@ -79,15 +80,15 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Jessica 
 - John 
 - Lilly 
-:::
-
-:::{.column}
 - Scott 
 - Ted
 - Aaron (2018)
 :::
-::::
 
+:::{.column}
+![](images/CascadiaRConf-Intro.png)
+:::
+::::
 
 - But we were an awesome team!
 
@@ -111,12 +112,19 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 |Childcare | DivCare |
 
 
-## Venue: OHSU Collaborative Life Sciences Building
+## Venue: OHSU/PSU Collaborative Life Sciences Building
 
+::::{.columns}
+:::{.column}
 - Med school student classroom
 - Lots of Outlets
 - Fast Internet
 - Lots of begging on my part
+:::
+
+:::{.column}
+:::
+::::
 
 ## Who does what?
 
@@ -142,6 +150,13 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Chaos (In a good way)
 - Agenda: Scott was literally updating website day of
 - 
+
+## Keynotes:
+
+- Vinay Prasad
+- Gabriela de Quieroz
+- Alison Hill
+- Kara Woo
 
 ## Talks
 
@@ -169,7 +184,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ## beeR
 
 - Painful logistically but worth it
-- 
+- Hiring bartender and food service
 
 
 ## cRaggy: Visualizing Together
