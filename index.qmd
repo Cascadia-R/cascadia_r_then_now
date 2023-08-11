@@ -111,6 +111,10 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 |Bartender | OHSU approved |
 |Childcare | DivCare |
 
+## Timeline: 3 months
+
+
+
 
 ## Venue: OHSU/PSU Collaborative Life Sciences Building
 
@@ -149,43 +153,51 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ## What Happened on the Big Day?
 
 - Chaos (In a good way)
+- Registration: Relatively quick!
 - Agenda: Scott was literally updating website day of
-- 
+- Workshops
+- Lightning Talks + Free Beer
 
 ## Keynotes:
 
-- Vinay Prasad
-- Gabriela de Quieroz
-- Alison Hill
+- Vinay Prasad - What big data research will be helpful in the age of medical reversal?
+- Gabriela de Quieroz - R-Ladies Global Community and Vision
+- Alison Hill - 
 - Kara Woo
 
 ## Talks
 
-> Lisa Karstens- Microbial community analysis in R
-
-> Amelia Abreu - Improving the Developer Experience
-
-> Daniel Anderson	-	Contribute to Open Source with Pretty Slides  
-
+- **Lisa Karstens** 
+    - *Microbial community analysis in R*
+- **Amelia Abreu** 
+    - *Improving the Developer Experience*
+- **Daniel Anderson**	
+    -	*Contribute to Open Source with Pretty Slides*  
+- **Kalbi Zongo** 
+    - *Introduction to sparklyr*
 
 ## Lightning Talks
 
-> Amy Williams - Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs
-
-> Jacqueline Nolis - Using deep learning in R to generate offensive license plates
-
-> Caitlin Hudon	R-Ladies - NULL: When Missing Data is Valuable
-
+- **Amy Williams** 
+    - *Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs*
+- **Jacqueline Nolis** 
+    - *Using deep learning in R to generate offensive license plates*
+- **Caitlin Hudon**	
+    - *NULL: When Missing Data is Valuable*
 
 ## Workshops
 
 - gRadual intRoduction to Tidyverse
-- 
+- Happy R Users Purrr
+- Deep Learning with TensorFlow
+- R with Databases
 
 ## beeR
 
 - Painful logistically but worth it
+- Costco! 
 - Hiring bartender and food service
+- Promising facilities not to make a mess
 
 
 ## cRaggy: Visualizing Together
@@ -203,6 +215,16 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Be supportive and kind to each other! 
 :::
 ::::
+
+## Who Came?
+
+```{r}
+responses |>
+  dplyr::rename(career = `Where are you in your career?`) |>
+  ggplot() + aes(x=fct_infreq(career), fill=career) + geom_bar() +
+  theme(legend.position="none") + labs(title="Who is the Cascadia R Community? (n=59)", xlab="Career", ylab="number of people")
+
+```
 
 
 ## How did we do? (2017)
@@ -313,12 +335,14 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 ## How did we do?
 
+> I was seriously blown away. Of all the conferences I've been to over the years this was the most beneficial and well structured conference I've attended. It's an amazing deal that can't be beat!
+
 > Amazing conference! love the one day thing, the schedule, and the location!
 
 > Had a great time and glad I came! Thanks for keeping the coffee flowing.
 
 > 10/10 for enchantment!                                                                                            
-> I was seriously blown away. Of all the conferences I've been to over the years this was the most beneficial and well structured conference I've attended. It's an amazing deal that can't be beat!
+
 
 > Child care was great!  
 
@@ -365,6 +389,14 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 - Volunteers are awesome and step up
 - A conference is all about the people
+- Cascadia R users are amazing
+- 
+
+## The Legacy of Cascadia-R
+
+- Brought R users together to talk
+- Workshop material is still being used
+- 
 
 
 # What About Now?
