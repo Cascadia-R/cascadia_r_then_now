@@ -29,7 +29,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ## Answered Questions 
 
 - Can you organize a conference with just 6 people?
-- What is the Cascadia Community Like?
+- What is the Cascadia R Community Like?
 - Should you volunteer for the next Cascadia-R?
 
 ## Outline
@@ -116,13 +116,14 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ::::{.columns}
 :::{.column}
-- Med school student classroom
+- Med school student classroom (275 capacity)
 - Lots of Outlets
 - Fast Internet
 - Lots of begging on my part
 :::
 
 :::{.column}
+![](images/CLSB-SKT+Exterior+Primary.jpg)
 :::
 ::::
 
