@@ -226,6 +226,29 @@ responses |>
 
 ```
 
+## Industry
+
+```{r}
+responses3 <- responses2 |> dplyr::select(contains("industry")) |> 
+  dplyr::rename(industry=`Which industry are you in? Select the one that most closely relates to your work or interest`) |> 
+  tidyr::separate_longer_delim(cols=industry, delim=" ") |> 
+  mutate(industry=stringr::str_replace(industry,",","")) |> 
+  dplyr::filter(industry!="/") |>
+  dplyr::mutate(industry = fct_infreq(industry)) 
+
+  
+responses_count <- responses3 |> count(industry)  |>
+  dplyr::filter(n > 1) 
+
+responses3 |>
+  dplyr::filter(industry %in% responses_count$industry) |>
+  ggplot() + aes(x=industry, fill=industry) + geom_bar() +
+    theme_minimal() +
+  theme(legend.position = "none", axis.text.x = element_text(angle = 45)) +
+  labs(title="Not Just Academia!")
+
+```
+
 
 ## How did we do? (2017)
 
@@ -373,7 +396,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Jacqueline Nolis
 - Sondra Stegenga
 - Dror Berel
-
+- Isabella Velaquez
 :::
 
 ::: {.column width="50%"}
@@ -381,6 +404,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Ellis Hughes
 - David Severski
 - Meike Niederhausen
+- Alison Hill
 :::
 
 ::::
@@ -395,6 +419,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 ## The Legacy of Cascadia-R
 
 - Brought R users together to talk
+- Commitment to Diversity and Inclusion
 - Workshop material is still being used
 - 
 
