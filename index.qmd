@@ -302,6 +302,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Daniel Anderson
 - Ellis Hughes
 - David Severski
+- Kara Woo
 - Meike Niederhausen
 :::
 
@@ -330,6 +331,7 @@ Conference has continued on and become something even more amazing
 
 - Improve accessibility if done well
 - Online networking, sharing of info
+- Code of Conduct for both
 
 # Togetherness
 
