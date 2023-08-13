@@ -25,7 +25,7 @@
     "href": "index.html#it-was-just-6-people",
     "title": "Cascadia-R",
     "section": "2017: It was just 6 people",
-    "text": "2017: It was just 6 people\n\nChester\nJessica\nJohn\nLilly\nScott\nTed\nAaron (2018)\nBut we were an awesome team!"
+    "text": "2017: It was just 6 people\n\nChester Ismay\n\nJessica Minnier\nJohn David Smith\nLilly Winfree\nScott Chamberlain\nTed Laderas\nAaron Makubuya (2018)\nBut we were an awesome team!"
   },
   {
     "objectID": "index.html#minimum-viable-conference",
@@ -95,7 +95,7 @@
     "href": "index.html#what-did-we-learn",
     "title": "Cascadia-R",
     "section": "What Did We Learn?",
-    "text": "What Did We Learn?\n\nVolunteers are awesome and step up\nA conference is all about the people"
+    "text": "What Did We Learn?\n\nVolunteers are awesome and step up\nA conference is all about the people\nAccessibility is appreciated (cheap tickets, childcare, lactation room)"
   },
   {
     "objectID": "index.html#a-minimum-viable-conference",
@@ -299,5 +299,33 @@
     "title": "Cascadia-R",
     "section": "Answers to the Questions",
     "text": "Answers to the Questions\n\nCan you organize a conference with just 6 people?\n\nHell Yeah!\n\nShould you volunteer for the next Cascadia R?\n\nHell Yeah!"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "pitt_keynote",
+    "section": "",
+    "text": "Looking at the slides: https://cascadia-r.github.io/cascadia_r_then_now/#/title-slide\nI think the story goes back further than the gigantic beer pub.\nIt turns out there were lots of strands: Jessica, had we met at Rstudio Conf’s workshop by Jenny Bryan? [Yes!! Well I think we knew each other from R meetups beforehand, but we definitely did that together and maybe how we started talking about this]\nChester and I met at the Portland R meetup. For years it had been OHSU-based, but Scott Chamberlain had taken it on and it was thriving.\nChester was doing R support at Reed college. He contacted Hadley to see if he’d do a talk. It turned out to be cheap and easy because “Hadley had family in the area”. That’s how we heard and possibly met Charlotte. [this is how Jessica met Chester =)]\nThe purpose of the conference was to expand the conversation — Get Charlotte and her students to connect, but also bring diverse R users from all over the place together. Getting people to “see each other” was important.\nThe Craggy idea was kind of like tidy Tuesday… See how different people visualized the same dataset — and identify lighting talks. Charlotte’s was one of the lighting talks.\nWe tried to be transparent all along: what were the ingredients, how were we gathering to learn from each other. The value of “seeing the community” is that all the different threads can come together: people who may not have recognized each other as partners, all of a sudden had a common purpose.\nMy 2 cents.\n\nJM 2 cents:\nidea that having created this community before the pandemic carried us through, even though many of us scattered and became isolated, being able to come back again to this is very encouraging and healing\nvolunteers and people who are passionate about this community are what keeps it going, people come and go but the spirit remains\ndo we have the hex logos for all conferences? a little more detail about the 2017 and 2018 location and # of attendees\nfuture – get out of portland\nvalues were continued on through downstream conferences\ncovid = virtual = more accessible\nnice show of the community\nlook for some photos, maybe of craggy\nphotos of the organizers"
+  },
+  {
+    "objectID": "index.html#a-lifeline",
+    "href": "index.html#a-lifeline",
+    "title": "Cascadia-R",
+    "section": "A lifeline",
+    "text": "A lifeline\n\nCascadiaRconf continued virtually\nMaintained a community despite decentralization of information (rip #rstats twitter) and isolation\nUplifting to be here together again!"
+  },
+  {
+    "objectID": "index.html#hybridvirtual",
+    "href": "index.html#hybridvirtual",
+    "title": "Cascadia-R",
+    "section": "Hybrid/Virtual",
+    "text": "Hybrid/Virtual\n\nImprove accessibility if done well\nOnline networking, sharing of info"
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Cascadia-R",
+    "section": "Goals",
+    "text": "Goals\n\nGet out of Portland (check)\nKeep values upheld (check)\nEncourage participation from all (even a 5 minute talk on something you learned! we are all learners)\nContinue to learn how to increase diversity, accessibility, reach underrepresented groups"
   }
 ]
