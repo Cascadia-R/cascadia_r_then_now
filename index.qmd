@@ -76,13 +76,13 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ::::{.columns}
 :::{.column}
-- Chester 
-- Jessica 
-- John 
-- Lilly 
-- Scott 
-- Ted
-- Aaron (2018)
+- Chester Ismay   
+- Jessica Minnier 
+- John David Smith
+- Lilly Winfree
+- Scott Chamberlain
+- Ted Laderas
+- Aaron Makubuya (2018)
 :::
 
 :::{.column}
@@ -373,8 +373,9 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 > Had a great time and glad I came! Thanks for keeping the coffee flowing.
 
-> 10/10 for enchantment!                                                                                            
+## How did we do?
 
+> 10/10 for enchantment!                                                                                
 
 > Child care was great!  
 
@@ -412,6 +413,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Daniel Anderson
 - Ellis Hughes
 - David Severski
+- Kara Woo
 - Meike Niederhausen
 - Alison Hill
 :::
@@ -423,25 +425,47 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Volunteers are awesome and step up
 - A conference is all about the people
 - Cascadia R users are amazing
-- 
 
 ## The Legacy of Cascadia-R
 
 - Brought R users together to talk
 - Commitment to Diversity and Inclusion
 - Workshop material is still being used
-- 
+- Accessibility is appreciated (cheap tickets, childcare, lactation room)
 
 
 # What About Now?
 
 Conference has continued on and become something even more amazing
 
-##
+# Pandemic Lessons
 
+## A lifeline
 
+- CascadiaRconf continued virtually
+- Maintained a community despite decentralization of information (rip #rstats twitter) and isolation
+- Uplifting to be here together again!
+
+## Hybrid/Virtual
+
+- Improve accessibility if done well
+- Online networking, sharing of info
+- Code of Conduct for both
+
+# Togetherness
+
+> The value of “seeing the community” is that all the different threads can come together: people who may not have recognized each other as partners, all of a sudden had a common purpose.
+
+- John David Smith
 
 # What About The Future?
+
+## Goals
+
+- Get out of Portland (check)
+- Keep values upheld (check)
+- Encourage participation from all (even a 5 minute talk on something you learned! we are all learners)
+- Continue to learn how to increase diversity, accessibility, reach underrepresented groups
 
 ## Answers to the Questions
 
