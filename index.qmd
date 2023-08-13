@@ -140,15 +140,9 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ![Distribution. of Talk Proposal Scores](images/talk-proposals.jpg)
 
 
-## 2017: 245 People Registered!
-
-![Wide picture showing 245 people](images/IMG_4201.JPG)
 
 
 
-## How far did people travel?
-
-![Histogram of Distance](images/histogram-distance.png)
 
 ## What Happened on the Big Day?
 
@@ -160,9 +154,12 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ## Keynotes:
 
-- Vinay Prasad - What big data research will be helpful in the age of medical reversal?
-- Gabriela de Quieroz - R-Ladies Global Community and Vision
-- Alison Hill - 
+- Vinay Prasad 
+    - What big data research will be helpful in the age of medical reversal?
+- Gabriela de Quieroz 
+    - R-Ladies Global Community and Vision
+- Alison Hill 
+    - 
 - Kara Woo
 
 ## Talks
@@ -215,6 +212,18 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Be supportive and kind to each other! 
 :::
 ::::
+
+# Who are the Cascadia R Users?
+
+## 2017: 245 People Registered!
+
+![Wide picture showing 245 people](images/IMG_4201.JPG)
+
+
+## How far did people travel?
+
+![Histogram of Distance](images/histogram-distance.png)
+
 
 ## Who Came?
 
