@@ -6,6 +6,7 @@ date: 08/19/2023
 format: 
   revealjs:
     #css: [custom.css, hex.css, timeline.css]
+    incremental: true
     progress: false
     menu: false
     width: 1280
@@ -49,8 +50,10 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 :::
 
 ::: {.column width="50%"}
-- Over Beer at Gigantic Brewery
-- Wanting to bring people together
+- Lots of disparate groups: PDX-R, Oregon State University, Seattle-R, Vancouver-R
+- beeR discussion: "How can we bring these groups together?"
+- Constraints: "How can we make the conference accessible to the most people?"
+- Constraints: "Where can we hold it?"
 :::
 
 ::::
@@ -62,7 +65,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Home-Grown
 - Informal vs. Academic
 - Social 
-- Local people do awesome R Things
+- Local people and R
 :::
 
 :::{.column}
@@ -90,28 +93,27 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 :::
 ::::
 
-- But we were an awesome team!
+- Everyone did their part and it all came together
 
 ## Plan for a Minimum Viable Conference
 
-|What we needed|Where it came from|
-|--------------|------------------|
-|A Venue | OHSU Collaborative Life Science Building |
-|Keynote Speaker | Gabriela Quieroz, IBM/R-Ladies/Vinay Prasad, OHSU |
-|Speakers | Call for Presentations |
-|Audience | Meetup Mailing Lists / Friends |
-|Workshops | Call for Volunteers |
+::::{.columns}
+:::{.column}
+- A Venue
+- Speakers
+- Audience
+- Workshops
+:::
 
-## Minimum Viable Conference
+:::{.column}
+- Code of Conduct
+- Snacks/Beer
+- Bartender
+- Childcare
+:::
+::::
 
-|What we needed|Where it came from|
-|--------------|------------------|
-|Code of Conduct | R-Ladies |
-|Snacks and Drinks | Costco |
-|Bartender | OHSU approved |
-|Childcare | DivCare |
-
-## Timeline: 3 months
+# Timeline: 3 months
 
 
 
@@ -139,11 +141,6 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ![Distribution. of Talk Proposal Scores](images/talk-proposals.jpg)
 
-
-
-
-
-
 ## What Happened on the Big Day?
 
 - Chaos (In a good way)
@@ -155,12 +152,49 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ## Keynotes:
 
 - Vinay Prasad 
-    - What big data research will be helpful in the age of medical reversal?
 - Gabriela de Quieroz 
-    - R-Ladies Global Community and Vision
 - Alison Hill 
-    - 
 - Kara Woo
+
+## Workshops
+
+- [gRadual intRoduction to Tidyverse]()
+- [Happy R Users Purrr]()
+- Deep Learning with TensorFlow
+- [R with Databases]()
+
+## beeR
+
+- Painful logistically but worth it
+- Hiring bartender and food service
+- Promising facilities not to make a mess
+
+
+## cRaggy: Visualizing Data Together
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![](images/IMG_4387.jpg)
+:::
+
+::: {.column width="50%"}
+- Nike Biketown Data
+- This is for fun
+- Be supportive and kind to each other! 
+:::
+::::
+
+# Panels
+
+- Impostor Syndrome
+
+# Who are the Cascadia R Users?
+
+## 2017: 245 People Registered!
+
+![Wide picture showing 245 people](images/IMG_4201.JPG)
+
 
 ## Talks
 
@@ -182,54 +216,13 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - **Caitlin Hudon**	
     - *NULL: When Missing Data is Valuable*
 
-## Workshops
-
-- gRadual intRoduction to Tidyverse
-- Happy R Users Purrr
-- Deep Learning with TensorFlow
-- R with Databases
-
-## beeR
-
-- Painful logistically but worth it
-- Costco! 
-- Hiring bartender and food service
-- Promising facilities not to make a mess
-
-
-## cRaggy: Visualizing Together
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-![](images/IMG_4387.jpg)
-:::
-
-::: {.column width="50%"}
-- This is for fun
-- It is NOT about criticizing the original article or graph. 
-- Be supportive and kind to each other! 
-:::
-::::
-
-# Panels
-
-- Impostor Syndrome
-
-# Who are the Cascadia R Users?
-
-## 2017: 245 People Registered!
-
-![Wide picture showing 245 people](images/IMG_4201.JPG)
-
 
 ## How far did people travel?
 
 ![Histogram of Distance](images/histogram-distance.png)
 
 
-## Who Came?
+## Diverse in Skill Levels
 
 ```{r}
 responses |>
@@ -239,7 +232,7 @@ responses |>
 
 ```
 
-## Industry
+## Diverse in Backgrounds
 
 ```{r}
 responses3 <- responses2 |> dplyr::select(contains("industry")) |> 
@@ -262,9 +255,7 @@ responses3 |>
 
 ```
 
-
-
-## 2018 - Even better!
+## They Really Liked It!
 
 ```{r}
 #! warning: false
@@ -425,6 +416,8 @@ Conference has continued on and become something even more amazing
 
 - Can you organize a conference with just 6 people?
   - Hell Yeah!
+- Who is the Cascadia-R audience?
+  - Talented people who do amazing things
 - Should you volunteer for the next Cascadia R?
   - Hell Yeah!
   
