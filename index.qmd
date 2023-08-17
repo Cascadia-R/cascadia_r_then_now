@@ -376,8 +376,17 @@ text_frame <- responses2 |> select(contains("what") | contains("additional")) |>
 
 tf_counts <- text_frame |> count(word, sort=TRUE)
 
+pal = RColorBrewer::brewer.pal(9, "Set1")
+
+pal = c("#f29ad8",
+"#ee71c3",
+"#f658b8",
+"#f039b1",
+"#e305ad")
+
+
 wordcloud(tf_counts$word, tf_counts$n, 
-          min.freq=5, random.order=FALSE,colors = TRUE) + theme_barbie()
+          min.freq=5, random.order=FALSE,colors = pal, random.color = FALSE)
 
 ```
 
