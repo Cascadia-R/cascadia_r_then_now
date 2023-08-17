@@ -8,12 +8,14 @@ format:
     #css: [custom.css, hex.css, timeline.css]
     progress: false
     menu: false
+    slide-number: true
     width: 1280
     height: 720
     preview-links: true
     standalone: true
     scrollable: true
     theme: sky
+    footer: <https://bit.ly/cascadia_history>
 highlight-style: a11y
 ---
 
