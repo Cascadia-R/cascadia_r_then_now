@@ -39,7 +39,7 @@
     "href": "index.html#plan-for-a-minimum-viable-conference",
     "title": "Cascadia-R",
     "section": "Plan for a Minimum Viable Conference",
-    "text": "Plan for a Minimum Viable Conference\n\n\n\n\nA Venue\nSpeakers\nAudience\nWorkshops\nScholarships\n\n\n\nCode of Conduct\nSnacks/Beer\nBartender\nChildcare"
+    "text": "Plan for a Minimum Viable Conference\n\n\n\n\nA Venue\nSpeakers\nAudience\nWorkshops\nScholarships\n\n\n\nCode of Conduct\nSnacks/Beer\nBartender\nChildcare\nRecording"
   },
   {
     "objectID": "index.html#minimum-viable-conference",
@@ -95,14 +95,14 @@
     "href": "index.html#talks",
     "title": "Cascadia-R",
     "section": "Talks",
-    "text": "Talks\n\n\nLisa Karstens\n\nMicrobial community analysis in R\n\nAmelia Abreu\n\nImproving the Developer Experience\n\nDaniel Anderson\n\nContribute to Open Source with Pretty Slides\n\n\nKalbi Zongo\n\nIntroduction to sparklyr"
+    "text": "Talks\n\n\nLisa Karstens\n\nMicrobial community analysis in R\n\n\n\n\n\nAmelia Abreu\n\nImproving the Developer Experience\n\n\n\n\n\nDaniel Anderson\n\nContribute to Open Source with Pretty Slides\n\n\n\n\n\nKalbi Zongo\n\nIntroduction to sparklyr"
   },
   {
     "objectID": "index.html#lightning-talks",
     "href": "index.html#lightning-talks",
     "title": "Cascadia-R",
     "section": "Lightning Talks",
-    "text": "Lightning Talks\n\nAmy Williams\n\nUsing R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs\n\nJacqueline Nolis\n\nUsing deep learning in R to generate offensive license plates\n\nCaitlin Hudon\n\nNULL: When Missing Data is Valuable"
+    "text": "Lightning Talks\n\n\nAmy Williams\n\nUsing R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs\n\n\n\n\n\nJacqueline Nolis\n\nUsing deep learning in R to generate offensive license plates\n\n\n\n\n\nCaitlin Hudon\n\nNULL: When Missing Data is Valuable"
   },
   {
     "objectID": "index.html#workshops",
@@ -228,7 +228,7 @@
     "href": "index.html#a-lifeline",
     "title": "Cascadia-R",
     "section": "A lifeline",
-    "text": "A lifeline\n\nCascadiaRconf continued virtually\nMaintained a community despite decentralization of information (rip #rstats twitter) and isolation\nUplifting to be here together again!"
+    "text": "A lifeline\n\nCascadiaRconf continued virtually 2021-2022\nMaintained a community despite decentralization of information (rip #rstats twitter) and isolation\nUplifting to be here together again!"
   },
   {
     "objectID": "index.html#hybridvirtual",
@@ -292,5 +292,12 @@
     "title": "Cascadia-R",
     "section": "Thank You",
     "text": "Thank You\n\nCascadia-R Organizers (past and present)\nAmazing Cascadia-R audience and speakers\nYou!"
+  },
+  {
+    "objectID": "index.html#asynchronous-tools-that-helped-make-the-conference",
+    "href": "index.html#asynchronous-tools-that-helped-make-the-conference",
+    "title": "Cascadia-R",
+    "section": "Asynchronous Tools that helped make the conference",
+    "text": "Asynchronous Tools that helped make the conference\n\nTrello\nSlack"
   }
 ]

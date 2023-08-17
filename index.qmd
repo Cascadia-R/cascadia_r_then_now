@@ -94,6 +94,11 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 - Everyone did their part and it all came together
 
+## Asynchronous Tools that helped make the conference
+
+- Trello
+- Slack
+
 ## Plan for a Minimum Viable Conference
 
 :::{.incremental}
@@ -111,6 +116,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 - Snacks/Beer
 - Bartender
 - Childcare
+- Recording
 :::
 ::::
 :::
@@ -157,8 +163,8 @@ Call for Proposals - 1 month from start
 
 ## Workshops
 
-- [gRadual intRoduction to Tidyverse]()
-- [Happy R Users Purrr]()
+- [gRadual intRoduction to Tidyverse](https://github.com/Cascadia-R/gRadual-intRoduction-tidyverse)
+- [Happy R Users Purrr](https://github.com/Cascadia-R/purrr-tutorial)
 - Deep Learning with TensorFlow
 - [R with Databases]()
 
@@ -201,26 +207,40 @@ Call for Proposals - 1 month from start
 
 ## Talks
 
-::::{.incremental}
+:::{.fragment}
 - **Lisa Karstens** 
     - *Microbial community analysis in R*
+:::
+:::{.fragment}
 - **Amelia Abreu** 
     - *Improving the Developer Experience*
+:::
+:::{.fragment}
 - **Daniel Anderson**	
-    -	*Contribute to Open Source with Pretty Slides*  
+    -	*Contribute to Open Source with Pretty Slides*
+:::
+:::{.fragment}
 - **Kalbi Zongo** 
     - *Introduction to sparklyr*
-::::
+:::
+
 
 ## Lightning Talks
 
+::: {.fragment}
 - **Amy Williams** 
     - *Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs*
+:::
+
+::: {.fragment}
 - **Jacqueline Nolis** 
     - *Using deep learning in R to generate offensive license plates*
+:::
+
+::: {.fragment}
 - **Caitlin Hudon**	
     - *NULL: When Missing Data is Valuable*
-
+:::
 
 ## How far did people travel?
 
@@ -230,10 +250,18 @@ Call for Proposals - 1 month from start
 ## Diverse in Skill Levels
 
 ```{r}
-responses |>
+career_count <- responses2 |>
   dplyr::rename(career = `Where are you in your career?`) |>
-  ggplot() + aes(x=fct_infreq(career), fill=career) + geom_bar() +
-  theme(legend.position="none") + labs(title="Who is the Cascadia R Community? (n=59)", xlab="Career", ylab="number of people")
+  count(career) |> mutate(career=fct_reorder(career, n,.desc = TRUE)) |>
+  dplyr::filter(n>1)
+  
+  
+ggplot(career_count) + aes(x=career, y=n, fill=career) + geom_col() +
+  geom_text(aes(label=career), vjust=-2.5, angle=45, hjust=0.1) +
+  theme(legend.position="none") + labs(title="Who is the Cascadia R Community? (n=76)", xlab="Career", ylab="number of people") +
+  theme_minimal() +
+  theme(legend.position = "none", axis.text.x = element_blank() ) +
+  ylim(c(0, 35))
 
 ```
 
@@ -245,18 +273,22 @@ responses3 <- responses2 |> dplyr::select(contains("industry")) |>
   tidyr::separate_longer_delim(cols=industry, delim=" ") |> 
   mutate(industry=stringr::str_replace(industry,",","")) |> 
   dplyr::filter(industry!="/") |>
-  dplyr::mutate(industry = fct_infreq(industry)) 
+  dplyr::mutate(industry = fct_infreq(industry)) |>
+  count(industry)
 
   
 responses_count <- responses3 |> count(industry)  |>
   dplyr::filter(n > 1) 
 
 responses3 |>
-  dplyr::filter(industry %in% responses_count$industry) |>
-  ggplot() + aes(x=industry, fill=industry) + geom_bar() +
+  dplyr::filter(n>3) |>
+  #dplyr::filter(industry %in% responses_count$industry) |>
+  ggplot() + aes(x=industry, y=n, fill=industry) + geom_col() +
+  geom_text(aes(label=industry), vjust=-2.5, hjust=0.1, angle=45) +
     theme_minimal() +
-  theme(legend.position = "none", axis.text.x = element_text(angle = 45)) +
-  labs(title="Not Just Academia!", xlab="Field")
+  theme(legend.position = "none", axis.text.x = element_blank() ) +
+  labs(title="Not Just Academia!", xlab="Field") +
+  ylim(c(0, 40))
 
 ```
 
@@ -393,7 +425,7 @@ Conference has continued on and become something even more amazing
 
 ## A lifeline
 
-- CascadiaRconf continued virtually
+- CascadiaRconf continued virtually 2021-2022
 - Maintained a community despite decentralization of information (rip #rstats twitter) and isolation
 - Uplifting to be here together again!
 
@@ -433,6 +465,3 @@ Conference has continued on and become something even more amazing
 - Amazing Cascadia-R audience and speakers
 - You!
   
-## Who does what?
-
-![Trello Board](images/trello.png)
