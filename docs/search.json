@@ -88,7 +88,7 @@
     "href": "index.html#keynotes",
     "title": "Cascadia-R",
     "section": "Keynotes:",
-    "text": "Keynotes:\n\nVinay Prasad\nGabriela de Quieroz\nAlison Hill\nKara Woo"
+    "text": "Keynotes:\nLesson: it doesn’t hurt to ask!\n\nVinay Prasad\nGabriela de Quieroz\nAlison Hill\nKara Woo"
   },
   {
     "objectID": "index.html#talks",
@@ -109,7 +109,7 @@
     "href": "index.html#workshops",
     "title": "Cascadia-R",
     "section": "Workshops",
-    "text": "Workshops\n\ngRadual intRoduction to Tidyverse\nHappy R Users Purrr\nDeep Learning with TensorFlow\nR with Databases"
+    "text": "Workshops\n\nHome-grown\ngRadual intRoduction to Tidyverse\nHappy R Users Purrr\nDeep Learning with TensorFlow\nR with Databases"
   },
   {
     "objectID": "index.html#beer",
@@ -249,7 +249,7 @@
     "href": "index.html#answers-to-the-questions",
     "title": "Cascadia-R",
     "section": "Answers to the Questions",
-    "text": "Answers to the Questions\n\nCan you organize a conference with just 6 people?\n\nHell Yeah!\n\nWho is the Cascadia-R audience?\n\nTalented people who do amazing things\n\nShould you volunteer for the next Cascadia R?\n\nHell Yeah!"
+    "text": "Answers to the Questions\n\nCan you organize a conference with just 6 people?\n\nYeah!\n\nWho is the Cascadia-R audience?\n\nTalented people who do amazing things\n\nShould you volunteer for the next Cascadia R?\n\nYeah!"
   },
   {
     "objectID": "index.html#diverse-in-skill-levels",
@@ -298,6 +298,13 @@
     "href": "index.html#asynchronous-tools-that-helped-make-the-conference",
     "title": "Cascadia-R",
     "section": "Asynchronous Tools that helped make the conference",
-    "text": "Asynchronous Tools that helped make the conference\n\n\n\nTrello\nSlack"
+    "text": "Asynchronous Tools that helped make the conference\n\n\n\nTrello\nSlack\nAllowed us to make Asynchronous Decisions"
+  },
+  {
+    "objectID": "index.html#panel-discussion",
+    "href": "index.html#panel-discussion",
+    "title": "Cascadia-R",
+    "section": "Panel Discussion",
+    "text": "Panel Discussion\n\nImpostor Syndrome"
   }
 ]

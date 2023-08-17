@@ -101,6 +101,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 :::{.column width="30%"}
 - Trello
 - Slack
+- Allowed us to make Asynchronous Decisions
 :::
 :::{.column width="70%}
 ![](images/trello.png)
@@ -128,7 +129,7 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 ::::
 :::
 
-# Timeline: 3 months
+# Timeline: 2 1/2 months
 
 
 
@@ -163,6 +164,8 @@ Call for Proposals - 1 month from start
 
 ## Keynotes:
 
+Lesson: it doesn't hurt to ask!
+
 - Vinay Prasad 
 - Gabriela de Quieroz 
 - Alison Hill 
@@ -170,15 +173,15 @@ Call for Proposals - 1 month from start
 
 ## Workshops
 
+- Home-grown
 - [gRadual intRoduction to Tidyverse](https://github.com/Cascadia-R/gRadual-intRoduction-tidyverse)
 - [Happy R Users Purrr](https://github.com/Cascadia-R/purrr-tutorial)
 - Deep Learning with TensorFlow
 - [R with Databases]()
 
-# Panels
+## Panel Discussion
 
 - Impostor Syndrome
-
 
 ## cRaggy: Visualizing Data Together
 
@@ -275,7 +278,7 @@ responses3 |>
 :::
 :::{.fragment}
 - **Daniel Anderson**	
-    -	*Contribute to Open Source with Pretty Slides*
+    -	[*Contribute to Open Source with Pretty Slides*](https://www.datalorax.com/talks/cascadia18/#1)
 :::
 :::{.fragment}
 - **Kalbi Zongo** 
@@ -297,7 +300,7 @@ responses3 |>
 
 ::: {.fragment}
 - **Caitlin Hudon**	
-    - *NULL: When Missing Data is Valuable*
+    - [*NULL: When Missing Data is Valuable*](https://docs.google.com/presentation/d/1tq1NKuA_OrPEWjT63yi2Oq-KtXRsHnHawByw6-a_Y6w/edit#slide=id.p)
 :::
 
 
@@ -473,11 +476,11 @@ Conference has continued on and become something even more amazing
 ## Answers to the Questions
 
 - Can you organize a conference with just 6 people?
-  - Hell Yeah!
+  - Yeah!
 - Who is the Cascadia-R audience?
   - Talented people who do amazing things
 - Should you volunteer for the next Cascadia R?
-  - Hell Yeah!
+  - Yeah!
   
 ## Thank You
   
