@@ -456,7 +456,7 @@ Conference has continued on and become something even more amazing
 ![](images/2X-logo2019.png)
 :::
 
-:::{.fragment width=500}
+:::{.fragment width=600}
 ![](images/logo_2021.png)
 :::
 
@@ -491,10 +491,11 @@ Conference has continued on and become something even more amazing
 
 ## Goals
 
-- Get out of Portland (check)
-- Keep values upheld (check)
-- Encourage participation from all (even a 5 minute talk on something you learned! we are all learners)
-- Continue to learn how to increase diversity, accessibility, reach underrepresented groups
+- Get out of Portland {{< fa-solid fa-square-check >}}
+- Keep values upheld  {{< fa-solid fa-square-check >}}
+- Encourage participation from all   {{< fa-solid fa-square-check >}}
+    - (even a 5 minute talk on something you learned! we are all learners)
+- Continue to learn how to increase diversity, accessibility, reach underrepresented groups  {{< fas fa-check-square >}}
 
 ## Answers to the Questions
 
