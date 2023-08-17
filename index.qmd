@@ -22,6 +22,7 @@ library(tidyverse)
 library(ggstats)
 library(tidytext)
 library(wordcloud)
+library(ThemePark)
 responses <- read_csv("data/Cascadia R Conference Evaluation (Responses) 2017 - Form Responses 1.csv", na = "N/A")
 responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 - Form Responses 1.csv", na="N/A")
 ```
@@ -96,9 +97,15 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 ## Asynchronous Tools that helped make the conference
 
+::::{.columns}
+:::{.column width="30%"}
 - Trello
 - Slack
-
+:::
+:::{.column width="70%}
+![](images/trello.png)
+:::
+::::
 ## Plan for a Minimum Viable Conference
 
 :::{.incremental}
@@ -202,8 +209,59 @@ Call for Proposals - 1 month from start
 
 ## 2018: 254 People Registered!
 
-![Wide picture showing 253 people](images/IMG_4201.JPG)
+![Wide picture showing 254 people](images/IMG_4201.JPG)
 
+
+
+## How far did people travel?
+
+![Histogram of Distance](images/histogram-distance.png)
+
+
+## Diverse in Skill Levels
+
+```{r}
+career_count <- responses2 |>
+  dplyr::rename(career = `Where are you in your career?`) |>
+  count(career) |> mutate(career=fct_reorder(career, n,.desc = TRUE)) |>
+  dplyr::filter(n>1)
+  
+  
+ggplot(career_count) + aes(x=career, y=n, fill=n) + geom_col() + scale_fill_barbie() +
+  geom_text(aes(label=career), vjust=-2.5, angle=45, hjust=0.1) +
+  theme(legend.position="none") + labs(title="Who is the Cascadia R Community? (n=76)", xlab="Career", ylab="number of people") +
+  theme_minimal() +
+  theme(legend.position = "none", axis.text.x = element_blank() ) +
+  ylim(c(0, 35)) + theme_barbie()
+
+```
+
+## Diverse in Backgrounds
+
+```{r}
+responses3 <- responses2 |> dplyr::select(contains("industry")) |> 
+  dplyr::rename(industry=`Which industry are you in? Select the one that most closely relates to your work or interest`) |> 
+  tidyr::separate_longer_delim(cols=industry, delim=" ") |> 
+  mutate(industry=stringr::str_replace(industry,",","")) |> 
+  dplyr::filter(industry!="/") |>
+  dplyr::mutate(industry = fct_infreq(industry)) |>
+  count(industry)
+
+  
+responses_count <- responses3 |> count(industry)  |>
+  dplyr::filter(n > 1) 
+
+responses3 |>
+  dplyr::filter(n>3) |>
+  #dplyr::filter(industry %in% responses_count$industry) |>
+  ggplot() + aes(x=industry, y=n, fill=n) + geom_col() + scale_fill_barbie() +
+  geom_text(aes(label=industry, color=barbie_theme_colors["text"]), vjust=-2.5, hjust=0.1, angle=45) +
+    theme_minimal()  +
+  theme(legend.position = "none", axis.text.x = element_blank() ) +
+  labs(title="Cascadia R is Not just academia! (n=76)", xlab="Field") +
+  ylim(c(0, 40)) + theme_barbie()
+
+```
 
 ## Talks
 
@@ -242,55 +300,33 @@ Call for Proposals - 1 month from start
     - *NULL: When Missing Data is Valuable*
 :::
 
-## How far did people travel?
-
-![Histogram of Distance](images/histogram-distance.png)
 
 
-## Diverse in Skill Levels
+## Friends we made along the way
 
-```{r}
-career_count <- responses2 |>
-  dplyr::rename(career = `Where are you in your career?`) |>
-  count(career) |> mutate(career=fct_reorder(career, n,.desc = TRUE)) |>
-  dplyr::filter(n>1)
-  
-  
-ggplot(career_count) + aes(x=career, y=n, fill=career) + geom_col() +
-  geom_text(aes(label=career), vjust=-2.5, angle=45, hjust=0.1) +
-  theme(legend.position="none") + labs(title="Who is the Cascadia R Community? (n=76)", xlab="Career", ylab="number of people") +
-  theme_minimal() +
-  theme(legend.position = "none", axis.text.x = element_blank() ) +
-  ylim(c(0, 35))
+:::: {.columns}
+::: {.column width="50%"}
+- Caitlin Hudon
+- Jacqueline Nolis
+- Sondra Stegenga
+- Dror Berel
+- Isabella Velaquez
+- Alison Hill
+:::
 
-```
+::: {.column width="50%"}
+- Daniel Anderson
+- Ellis Hughes
+- David Severski
+- Kara Woo
+- Meike Niederhausen
+- Charlotte Wickham
+:::
 
-## Diverse in Backgrounds
+::::
 
-```{r}
-responses3 <- responses2 |> dplyr::select(contains("industry")) |> 
-  dplyr::rename(industry=`Which industry are you in? Select the one that most closely relates to your work or interest`) |> 
-  tidyr::separate_longer_delim(cols=industry, delim=" ") |> 
-  mutate(industry=stringr::str_replace(industry,",","")) |> 
-  dplyr::filter(industry!="/") |>
-  dplyr::mutate(industry = fct_infreq(industry)) |>
-  count(industry)
 
-  
-responses_count <- responses3 |> count(industry)  |>
-  dplyr::filter(n > 1) 
-
-responses3 |>
-  dplyr::filter(n>3) |>
-  #dplyr::filter(industry %in% responses_count$industry) |>
-  ggplot() + aes(x=industry, y=n, fill=industry) + geom_col() +
-  geom_text(aes(label=industry), vjust=-2.5, hjust=0.1, angle=45) +
-    theme_minimal() +
-  theme(legend.position = "none", axis.text.x = element_blank() ) +
-  labs(title="Not Just Academia!", xlab="Field") +
-  ylim(c(0, 40))
-
-```
+# How was the Conf?
 
 ## They Really Liked It!
 
@@ -319,14 +355,13 @@ responses_likert <- responses_likert |> select(any_of(c( "Location", "Agenda","S
 #responses_likert <- janitor::clean_names(responses_likert)
 responses_likert <- responses_likert <- as.data.frame(responses_likert)
 
-ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference! (n=76)")
+ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference! (n=76)") + theme_barbie()
 
 #all_likert <- likert::likert(responses_likert)
 
 #plot(all_likert, main="Responses were very positive!")
 
 ```
-
 
 
 ## How did we do?
@@ -342,7 +377,7 @@ text_frame <- responses2 |> select(contains("what") | contains("additional")) |>
 tf_counts <- text_frame |> count(word, sort=TRUE)
 
 wordcloud(tf_counts$word, tf_counts$n, 
-          min.freq=5, random.order=FALSE,colors = TRUE)
+          min.freq=5, random.order=FALSE,colors = TRUE) + theme_barbie()
 
 ```
 
@@ -376,30 +411,6 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 > I'd rate this conference 11/10 and look forward to attending again in future years.  
 
-
-
-## Friends we made along the way
-
-:::: {.columns}
-::: {.column width="50%"}
-- Caitlin Hudon
-- Jacqueline Nolis
-- Sondra Stegenga
-- Dror Berel
-- Isabella Velaquez
-- Alison Hill
-:::
-
-::: {.column width="50%"}
-- Daniel Anderson
-- Ellis Hughes
-- David Severski
-- Kara Woo
-- Meike Niederhausen
-- Charlotte Wickham
-:::
-
-::::
 
 ## What Did We Learn? 
 

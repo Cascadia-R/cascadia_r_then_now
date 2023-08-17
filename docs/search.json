@@ -130,7 +130,7 @@
     "href": "index.html#people-registered",
     "title": "Cascadia-R",
     "section": "2018: 254 People Registered!",
-    "text": "2018: 254 People Registered!\n\nWide picture showing 253 people"
+    "text": "2018: 254 People Registered!\n\nWide picture showing 254 people"
   },
   {
     "objectID": "index.html#how-far-did-people-travel",
@@ -186,7 +186,7 @@
     "href": "index.html#how-did-we-do",
     "title": "Cascadia-R",
     "section": "How did we do?",
-    "text": "How did we do?"
+    "text": "How did we do?\n\n\n\nNULL"
   },
   {
     "objectID": "index.html#how-did-we-do-1",
@@ -298,6 +298,6 @@
     "href": "index.html#asynchronous-tools-that-helped-make-the-conference",
     "title": "Cascadia-R",
     "section": "Asynchronous Tools that helped make the conference",
-    "text": "Asynchronous Tools that helped make the conference\n\nTrello\nSlack"
+    "text": "Asynchronous Tools that helped make the conference\n\n\n\nTrello\nSlack"
   }
 ]
