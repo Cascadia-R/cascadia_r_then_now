@@ -290,6 +290,9 @@ responses3 |>
 
 ## Lightning Talks
 
+::::{.columns}
+
+:::{.column}
 ::: {.fragment}
 - **Amy Williams** 
     - *Using R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs*
@@ -304,8 +307,11 @@ responses3 |>
 - **Caitlin Hudon**	
     - [*NULL: When Missing Data is Valuable*](https://docs.google.com/presentation/d/1tq1NKuA_OrPEWjT63yi2Oq-KtXRsHnHawByw6-a_Y6w/edit#slide=id.p)
 :::
-
-
+:::
+:::{.column}
+![](images/IMG_4404-license.jpg)
+:::
+::::
 
 ## Friends we made along the way
 
