@@ -158,11 +158,18 @@ Call for Proposals - 1 month from start
 
 ## What Happened on the Big Day?
 
+::::{.columns}
+:::{.column}
 - Chaos (In a good way)
 - Registration: Relatively quick!
 - Agenda: updating website day of
 - Workshops
 - Lightning Talks + Free Beer
+:::
+:::{.column}
+![Registration Booth](images/IMG_4367-registration.jpg)
+:::
+::::
 
 ## Keynotes:
 
@@ -234,7 +241,7 @@ career_count <- responses2 |>
   
 ggplot(career_count) + aes(x=career, y=n, fill=n) + geom_col() + scale_fill_barbie() +
   geom_text(aes(label=career), vjust=-2.5, angle=45, hjust=0.1) +
-  theme(legend.position="none") + labs(title="Who is the Cascadia R Community? (n=76)", xlab="Career", ylab="number of people") +
+  theme(legend.position="none") + labs(title="Who is the Cascadia-R Community? (n=76)", xlab="Career", ylab="number of people") +
   theme_minimal() +
   theme(legend.position = "none", axis.text.x = element_blank() ) +
   ylim(c(0, 35)) + theme_barbie()
@@ -475,6 +482,20 @@ Conference has continued on and become something even more amazing
 
 # Pandemic Lessons
 
+## The Cascadia-R that Wasn't (2020)
+
+::::{.columns}
+:::{.column}
+- [University of Oregon](https://cascadiarconf.com/years/2020/agenda/)
+- Daniel Anderson
+- Brendan Cullen
+:::
+
+:::{.column}
+![](images/logo2020.png)
+:::
+::::
+
 ## A lifeline
 
 - CascadiaRconf continued virtually 2021-2022
@@ -527,8 +548,8 @@ Conference has continued on and become something even more amazing
   
 ## Thank You and Gratitude
 
-- OHSU, Posit, and R-Consortium and other sponsors
+- OHSU, Posit, ProCogia, Fred Hutch, and R-Consortium and other sponsors
 - Cascadia-R Organizers (past and present)
-- Amazing Cascadia-R audience and speakers
-- You!
+- You! The amazing Cascadia-R audience and speakers
+
   
