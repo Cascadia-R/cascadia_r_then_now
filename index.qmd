@@ -263,7 +263,7 @@ responses3 |>
   geom_text(aes(label=industry, color=barbie_theme_colors["text"]), vjust=-2.5, hjust=0.1, angle=45) +
     theme_minimal()  +
   theme(legend.position = "none", axis.text.x = element_blank() ) +
-  labs(title="Cascadia R is Not just academia! (n=76)", xlab="Field") +
+  labs(title="Cascadia-R is Not just academia! (n=76)", xlab="Field") +
   ylim(c(0, 40)) + theme_barbie()
 
 ```
@@ -362,10 +362,6 @@ responses_likert <- responses_likert <- as.data.frame(responses_likert)
 
 ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference! (n=76)") + theme_barbie()
 
-#all_likert <- likert::likert(responses_likert)
-
-#plot(all_likert, main="Responses were very positive!")
-
 ```
 
 
@@ -442,9 +438,34 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Accessibility is appreciated (cheap tickets, childcare, lactation room)
 
 
-# What About Now?
+## Cascadia-R continues to evolve
 
+::::{.columns}
+:::{.column}
 Conference has continued on and become something even more amazing
+:::
+
+:::{.column}
+::::{.r-stack}
+
+:::{.fragment width=500}
+![](images/logo-2018.png)
+:::
+
+:::{.fragment width=500}
+![](images/2X-logo2019.png)
+:::
+
+:::{.fragment width=500}
+![](images/logo_2021.png)
+:::
+
+:::{.fragment width=500}
+![](images/logo_2023.png)
+:::
+::::
+:::
+::::
 
 # Pandemic Lessons
 
@@ -477,15 +498,29 @@ Conference has continued on and become something even more amazing
 
 ## Answers to the Questions
 
+:::{.fragment}
 - Can you organize a conference with just 6 people?
   - Yeah!
+:::
+
+:::{.fragment}
 - Who is the Cascadia-R audience?
   - Talented people who do amazing things
+:::
+
+:::{.fragment}
 - Should you volunteer for the next Cascadia R?
   - Yeah!
+:::
   
-## Thank You
+::: {.fragment}
+- What is that ggplot2 Barbie theme?
+  - `theme_barbie()` from [{ThemePark}](https://github.com/MatthewBJane/theme_park)
+:::
   
+## Thank You and Gratitude
+
+- OHSU, Posit, and R-Consortium and other sponsors
 - Cascadia-R Organizers (past and present)
 - Amazing Cascadia-R audience and speakers
 - You!

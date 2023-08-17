@@ -249,7 +249,7 @@
     "href": "index.html#answers-to-the-questions",
     "title": "Cascadia-R",
     "section": "Answers to the Questions",
-    "text": "Answers to the Questions\n\nCan you organize a conference with just 6 people?\n\nYeah!\n\nWho is the Cascadia-R audience?\n\nTalented people who do amazing things\n\nShould you volunteer for the next Cascadia R?\n\nYeah!"
+    "text": "Answers to the Questions\n\n\nCan you organize a conference with just 6 people?\n\nYeah!\n\n\n\n\n\nWho is the Cascadia-R audience?\n\nTalented people who do amazing things\n\n\n\n\n\nShould you volunteer for the next Cascadia R?\n\nYeah!\n\n\n\n\n\nWhat is that ggplot2 Barbie theme?\n\ntheme_barbie() from {ThemePark}"
   },
   {
     "objectID": "index.html#diverse-in-skill-levels",
@@ -306,5 +306,19 @@
     "title": "Cascadia-R",
     "section": "Panel Discussion",
     "text": "Panel Discussion\n\nImpostor Syndrome"
+  },
+  {
+    "objectID": "index.html#thank-you-and-gratitude",
+    "href": "index.html#thank-you-and-gratitude",
+    "title": "Cascadia-R",
+    "section": "Thank You and Gratitude",
+    "text": "Thank You and Gratitude\n\nOHSU, Posit, and R-Consortium and other sponsors\nCascadia-R Organizers (past and present)\nAmazing Cascadia-R audience and speakers\nYou!\n\n\n\nhttps://bit.ly/cascadia_history"
+  },
+  {
+    "objectID": "index.html#cascadia-r-continues-to-evolve",
+    "href": "index.html#cascadia-r-continues-to-evolve",
+    "title": "Cascadia-R",
+    "section": "Cascadia-R continues to evolve",
+    "text": "Cascadia-R continues to evolve\n\n\nConference has continued on and become something even more amazing"
   }
 ]
