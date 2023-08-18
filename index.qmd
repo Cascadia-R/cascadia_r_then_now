@@ -282,6 +282,7 @@ responses |>
   labs(title="How many miles did you travel to get here? (n=59)") +
   ylab("count") + ylim(c(0,33)) +
   annotate(x=0, y=31, geom="text", label="Portland") +
+  annotate(x=83, y=3, geom="text", label="Corvallis/Eugene") +
   annotate(x=165, y=8, geom="text", label="Seattle") +
   annotate(x=635, y=2, geom="text", label="San Francisco") +
   theme_barbie()
