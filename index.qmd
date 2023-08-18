@@ -238,6 +238,11 @@ cascadia_r |>
 :::
 ::::
 
+## Childcare/Travel Scholarships/Student Tickets
+
+- Wanted the conference to be accessible to everyone
+- Used a portion of ticket sales to handle this
+
 ## beeR
 
 ::::{.columns}
@@ -427,8 +432,7 @@ colnames(responses_likert) <- c("Registration", "Location", "Wi-Fi","Agenda","Sc
 
 responses_likert <- responses_likert |> select(any_of(c( "Location", "Agenda","Schedule", "Talk Quality", "Keynote Topics", "Snacks/Drinks")))
 
-#responses_likert <- janitor::clean_names(responses_likert)
-responses_likert <- responses_likert <- as.data.frame(responses_likert)
+responses_likert <- as.data.frame(responses_likert)
 
 ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference! (n=76)") + theme_barbie()
 
@@ -541,7 +545,7 @@ Conference has continued on and become something even more amazing
 ![](images/logo-2018.png)
 :::
 
-:::{.fragment width=600}
+:::{.fragment width=500}
 ![](images/2X-logo2019.png)
 :::
 
