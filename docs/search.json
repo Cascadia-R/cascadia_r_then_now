@@ -18,7 +18,7 @@
     "href": "index.html#the-origins",
     "title": "Cascadia-R",
     "section": "The origins",
-    "text": "The origins\n\n\n\n\n\nGigantic Brewery\n\n\ncascadia-R &lt;- pdx_r |&gt;\n  add_group(oregon_state) |&gt;\n  add_group(seattle) |&gt;\n  add_group(vancouver) |&gt;\n  add_group(u_oregon)\n\n\n\nLots of R Groups: PDX-R, Oregon State University, Seattle-R, Vancouver-R\n\n\n\n\nbeeR discussion: “How can we bring these groups together?”\n\n\n\n\n“How can we make the conference accessible to the most people?”\n\n\n\n\n“Where can we hold it?”"
+    "text": "The origins\n\n\n\n\n\nGigantic Brewery\n\n\ncascadia-R &lt;- pdx_r |&gt;\n  add_group(oregon_state) |&gt;\n  add_group(seattle) |&gt;\n  add_group(vancouver) |&gt;\n  add_group(u_oregon)\n\n\n\nLots of R Groups: PDX-R, Oregon State University, Seattle-R, University of Oregon, Vancouver-R\n\n\n\n\nbeeR discussion: “How can we bring these groups together?”\n\n\n\n\n“How can we make the conference accessible to the most people?”\n\n\n\n\n“Where can we hold it?”"
   },
   {
     "objectID": "index.html#our-values",
@@ -60,7 +60,7 @@
     "href": "index.html#venue-ohsupsu-collaborative-life-sciences-building",
     "title": "Cascadia-R",
     "section": "Venue: OHSU/PSU Collaborative Life Sciences Building",
-    "text": "Venue: OHSU/PSU Collaborative Life Sciences Building\n\n\n\nMed school student classroom (275 capacity)\nLots of Outlets\nFast Internet\nLots of begging on my part"
+    "text": "Venue: OHSU/PSU Collaborative Life Sciences Building\n\n\n\nMed school student classroom (275 capacity)\nLots of Outlets / Fast Internet\nLots of begging on my part"
   },
   {
     "objectID": "index.html#who-does-what",
@@ -74,7 +74,7 @@
     "href": "index.html#who-gets-to-talk",
     "title": "Cascadia-R",
     "section": "Who Gets to Talk?",
-    "text": "Who Gets to Talk?\nCall for Proposals - 1 month from start\n\nDistribution. of Talk Proposal Scores"
+    "text": "Who Gets to Talk?\n\nDistribution. of Talk Proposal Scores"
   },
   {
     "objectID": "index.html#what-happened-on-the-big-day",
@@ -87,8 +87,8 @@
     "objectID": "index.html#keynotes",
     "href": "index.html#keynotes",
     "title": "Cascadia-R",
-    "section": "Keynotes:",
-    "text": "Keynotes:\nLesson: it doesn’t hurt to ask!\n\nVinay Prasad\nGabriela de Quieroz\nAlison Hill\nKara Woo"
+    "section": "Keynotes",
+    "text": "Keynotes\nLesson: it doesn’t hurt to ask!\n\nVinay Prasad\nGabriela de Quieroz\nAlison Hill\nKara Woo"
   },
   {
     "objectID": "index.html#talks",
@@ -193,14 +193,14 @@
     "href": "index.html#how-did-we-do-1",
     "title": "Cascadia-R",
     "section": "How did we do?",
-    "text": "How did we do?\n\nI was seriously blown away. Of all the conferences I’ve been to over the years this was the most beneficial and well structured conference I’ve attended. It’s an amazing deal that can’t be beat!\n\n\nAmazing conference! love the one day thing, the schedule, and the location!\n\n\nHad a great time and glad I came! Thanks for keeping the coffee flowing."
+    "text": "How did we do?\n\n\nI was seriously blown away. Of all the conferences I’ve been to over the years this was the most beneficial and well structured conference I’ve attended. It’s an amazing deal that can’t be beat!\n\n\n\n\nAmazing conference! love the one day thing, the schedule, and the location!\n\n\n\n\nHad a great time and glad I came! Thanks for keeping the coffee flowing."
   },
   {
     "objectID": "index.html#how-did-we-do-2",
     "href": "index.html#how-did-we-do-2",
     "title": "Cascadia-R",
     "section": "How did we do?",
-    "text": "How did we do?\n\n10/10 for enchantment!\n\n\nChild care was great!\n\n\nThe venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I’m having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills."
+    "text": "How did we do?\n\n\n10/10 for enchantment!\n\n\n\n\nChild care was great!\n\n\n\n\nThe venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I’m having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills."
   },
   {
     "objectID": "index.html#friends-we-made-along-the-way",
@@ -221,14 +221,14 @@
     "href": "index.html#the-legacy-of-cascadia-r",
     "title": "Cascadia-R",
     "section": "The Legacy of Cascadia-R",
-    "text": "The Legacy of Cascadia-R\n\nBrought R users together to talk\nCommitment to Diversity and Inclusion\nWorkshop material is still being used\nAccessibility is appreciated (cheap tickets, childcare, lactation room)"
+    "text": "The Legacy of Cascadia-R\n\nBrought local R users together\nCommitment to Diversity and Inclusion\nWorkshop material is still being used\nAccessibility is appreciated (cheap tickets, scholarships, childcare, lactation room)"
   },
   {
     "objectID": "index.html#a-lifeline",
     "href": "index.html#a-lifeline",
     "title": "Cascadia-R",
     "section": "A lifeline",
-    "text": "A lifeline\n\nCascadiaRconf continued virtually 2021-2022\nMaintained a community despite decentralization of information (rip #rstats twitter) and isolation\nUplifting to be here together again!"
+    "text": "A lifeline\n\n\n\nCascadiaRconf continued virtually 2021-2022\nMaintained a community despite decentralization of information (rip #rstats twitter) and isolation\nUplifting to be here together again!"
   },
   {
     "objectID": "index.html#hybridvirtual",
@@ -242,14 +242,14 @@
     "href": "index.html#goals",
     "title": "Cascadia-R",
     "section": "Goals",
-    "text": "Goals\n\nGet out of Portland \nKeep values upheld \nEncourage participation from all\n\n(even a 5 minute talk on something you learned! we are all learners)\n\nContinue to learn how to increase diversity, accessibility, reach underrepresented groups"
+    "text": "Goals\n\nGet out of Portland \nKeep values upheld \nEncourage participation from all \n\n(even a 5 minute talk on something you learned! we are all learners)\n\nContinue to learn how to increase diversity, accessibility, reach underrepresented groups"
   },
   {
     "objectID": "index.html#answers-to-the-questions",
     "href": "index.html#answers-to-the-questions",
     "title": "Cascadia-R",
     "section": "Answers to the Questions",
-    "text": "Answers to the Questions\n\n\nCan you organize a conference with just 6 people?\n\nYeah!\n\n\n\n\n\nWho is the Cascadia-R audience?\n\nTalented people who do amazing things\n\n\n\n\n\nShould you volunteer for the next Cascadia R?\n\nYeah!\n\n\n\n\n\nWhat is that ggplot2 Barbie theme?\n\ntheme_barbie() from {ThemePark}"
+    "text": "Answers to the Questions\n\n\nCan you organize a conference with just 6 people?\n\nYeah, with the help of the R community!\n\n\n\n\n\nWho is the Cascadia-R audience?\n\nTalented people who do amazing things\n\n\n\n\n\nShould you volunteer for the next Cascadia R?\n\nYeah! You really should.\n\n\n\n\n\nWhat is that {ggplot2} Barbie theme?\n\ntheme_barbie() from {ThemePark}"
   },
   {
     "objectID": "index.html#diverse-in-skill-levels",
@@ -284,7 +284,7 @@
     "href": "index.html#how-did-we-do-3",
     "title": "Cascadia-R",
     "section": "How did we do?",
-    "text": "How did we do?\n\nI love this conference, it was absolutely a great use of my time\n\n\ny’all did a great job, thank you.\n\n\nPlease keep doing these conferences. They are valuable\n\n\nThank you so much for making this accessible/affordable to students!\n\n\nI’d rate this conference 11/10 and look forward to attending again in future years."
+    "text": "How did we do?\n\n\nI love this conference, it was absolutely a great use of my time\n\n\n\n\ny’all did a great job, thank you.\n\n\n\n\nPlease keep doing these conferences. They are valuable\n\n\n\n\nThank you so much for making this accessible/affordable to students!\n\n\n\n\nI’d rate this conference 11/10 and look forward to attending again in future years."
   },
   {
     "objectID": "index.html#thank-you",
@@ -305,7 +305,7 @@
     "href": "index.html#panel-discussion",
     "title": "Cascadia-R",
     "section": "Panel Discussion",
-    "text": "Panel Discussion\n\n\n\nImpostor Syndrome\n\n\ncascadia_r |&gt;\n  drop_feeling(\"impostor\")"
+    "text": "Panel Discussion\n\n\n\nImpostor Syndrome\n\nFrank Discussion of what it means\n\n\n\ncascadia_r |&gt;\n  drop_feeling(\"impostor\")"
   },
   {
     "objectID": "index.html#thank-you-and-gratitude",
@@ -326,7 +326,7 @@
     "href": "index.html#the-cascadia-r-that-wasnt-2020",
     "title": "Cascadia-R",
     "section": "The Cascadia-R that Wasn’t (2020)",
-    "text": "The Cascadia-R that Wasn’t (2020)\n\n\n\nUniversity of Oregon\nDaniel Anderson\nBrendan Cullen"
+    "text": "The Cascadia-R that Wasn’t (2020)\n\n\n\nYear of COVID\nUniversity of Oregon\n\nDaniel Anderson\nBrendan Cullen"
   },
   {
     "objectID": "index.html#tools-that-helped-make-the-conference",

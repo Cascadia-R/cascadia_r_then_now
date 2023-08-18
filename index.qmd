@@ -60,7 +60,7 @@ cascadia-R <- pdx_r |>
 
 ::: {.column width="70%"}
 :::{.fragment}
-- Lots of R Groups: PDX-R, Oregon State University, Seattle-R, Vancouver-R
+- Lots of R Groups: [PDX-R](https://www.meetup.com/portland-r-user-group/), Oregon State University, [Seattle-R](https://www.meetup.com/seattle-user/), [University of Oregon](https://blogs.uoregon.edu/rclub/),  [Vancouver-R](https://www.meetup.com/vancouver-r-users-group-data-analysis-statistics/)
 :::
 :::{.fragment}
 - beeR discussion: "How can we bring these groups together?"
@@ -148,14 +148,12 @@ cascadia-R <- pdx_r |>
 # Timeline: 2 1/2 months
 
 
-
 ## Venue: OHSU/PSU Collaborative Life Sciences Building
 
 ::::{.columns}
 :::{.column}
 - Med school student classroom (275 capacity)
-- Lots of Outlets
-- Fast Internet
+- Lots of Outlets / Fast Internet
 - Lots of begging on my part
 :::
 
@@ -165,8 +163,6 @@ cascadia-R <- pdx_r |>
 ::::
 
 ## Who Gets to Talk?
-
-Call for Proposals - 1 month from start
 
 ![Distribution. of Talk Proposal Scores](images/talk-proposals.jpg)
 
@@ -185,7 +181,7 @@ Call for Proposals - 1 month from start
 :::
 ::::
 
-## Keynotes:
+## Keynotes
 
 Lesson: it doesn't hurt to ask!
 
@@ -202,7 +198,7 @@ Lesson: it doesn't hurt to ask!
 - [gRadual intRoduction to Tidyverse](https://github.com/Cascadia-R/gRadual-intRoduction-tidyverse)
 - [Happy R Users Purrr](https://github.com/Cascadia-R/purrr-tutorial)
 - Deep Learning with TensorFlow
-- [R with Databases]()
+- [R with Databases](https://github.com/Cascadia-R/Using_R_With_Databases)
 :::
 :::{.column}
 ![Charlotte Wickham Teaching `purrr`](images/IMG_4199-purrr.JPG)
@@ -214,12 +210,15 @@ Lesson: it doesn't hurt to ask!
 ::::{.columns}
 :::{.column}
 - Impostor Syndrome
+  - Frank Discussion of what it means
 :::
 :::{.column}
 ```
 cascadia_r |>
   drop_feeling("impostor")
 ```
+
+{{< fa users size=10x >}}
 :::
 ::::
 
@@ -252,6 +251,8 @@ cascadia_r |>
 cascadia_r |>
   add_beer()
 ```
+
+{{< fa beer-mug-empty size=10x >}}
 :::
 ::::
 
@@ -440,20 +441,17 @@ ggstats::gglikert(responses_likert) + labs(title="Attendees loved the conference
 text_frame <- responses2 |> select(contains("what") | contains("additional")) |>
   rename(favorite=`What were your favorite parts of the conference?`, improve=`What would you change or improve about the conference?`, etc=`Please add additional comments on your overall conference experience.`) |>
   pivot_longer(everything(), names_to = "question", values_to = "answers") |>
-  #mutate(answers=str_replace(pattern = "workshop^", "workshops", answers)) |>
   unnest_tokens("word", "answers") |>
-  anti_join(stop_words)
+    mutate(word=str_replace(word, pattern = "workshop$", replacement="workshops")) |>
+    anti_join(stop_words)
 
 tf_counts <- text_frame |> count(word, sort=TRUE)
-
-pal = RColorBrewer::brewer.pal(9, "Set1")
 
 pal = c("#f29ad8",
 "#ee71c3",
 "#f658b8",
 "#f039b1",
 "#e305ad")
-
 
 wordcloud(tf_counts$word, tf_counts$n, 
           min.freq=5, random.order=FALSE,colors = pal, random.color = FALSE)
@@ -463,33 +461,53 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 ## How did we do?
 
+:::{.fragment}
 > I was seriously blown away. Of all the conferences I've been to over the years this was the most beneficial and well structured conference I've attended. It's an amazing deal that can't be beat!
+:::
 
+:::{.fragment}
 > Amazing conference! love the one day thing, the schedule, and the location!
+:::
 
+:::{.fragment}
 > Had a great time and glad I came! Thanks for keeping the coffee flowing.
+:::
 
 ## How did we do?
 
-> 10/10 for enchantment!                                                                                
+:::{.fragment}
+> 10/10 for enchantment!                                                                              
+:::
 
+:::{.fragment}
 > Child care was great!  
+:::
 
+:::{.fragment}
 > The venue was amazing. The value was exceptional. The conference was very well organized. I loved the code of conduct. I'm having a harder time than expected finding an analytics job and this conference inspired me to keep going, keep learning, keep trying, and keep improving my R skills.
-
+:::
 
 ## How did we do?
 
+:::{.fragment}
 > I love this conference, it was absolutely a great use of my time  
+:::
 
+:::{.fragment}
 > y'all did a great job, thank you.
+:::
 
+:::{.fragment}
 > Please keep doing these conferences. They are valuable
+:::
 
+:::{.fragment}
 > Thank you so much for making this accessible/affordable to students!
+:::
 
+:::{.fragment}
 > I'd rate this conference 11/10 and look forward to attending again in future years.  
-
+:::
 
 ## What Did We Learn? 
 
@@ -502,10 +520,10 @@ wordcloud(tf_counts$word, tf_counts$n,
 
 ## The Legacy of Cascadia-R
 
-- Brought R users together to talk
+- Brought local R users together
 - Commitment to Diversity and Inclusion
 - Workshop material is still being used
-- Accessibility is appreciated (cheap tickets, childcare, lactation room)
+- Accessibility is appreciated (cheap tickets, scholarships, childcare, lactation room)
 
 
 ## Cascadia-R continues to evolve
@@ -518,11 +536,11 @@ Conference has continued on and become something even more amazing
 :::{.column}
 ::::{.r-stack}
 
-:::{.fragment width=500}
+:::{.fragment width=600}
 ![](images/logo-2018.png)
 :::
 
-:::{.fragment width=500}
+:::{.fragment width=600}
 ![](images/2X-logo2019.png)
 :::
 
@@ -543,9 +561,10 @@ Conference has continued on and become something even more amazing
 
 ::::{.columns}
 :::{.column}
+- Year of COVID
 - [University of Oregon](https://cascadiarconf.com/years/2020/agenda/)
-- Daniel Anderson
-- Brendan Cullen
+  - Daniel Anderson
+  - Brendan Cullen
 :::
 
 :::{.column}
@@ -555,9 +574,16 @@ Conference has continued on and become something even more amazing
 
 ## A lifeline
 
+::::{.columns}
+:::{.column}
 - CascadiaRconf continued virtually 2021-2022
 - Maintained a community despite decentralization of information (rip #rstats twitter) and isolation
 - Uplifting to be here together again!
+:::
+:::{.column}
+![](images/logo_2021.png)
+:::
+::::
 
 ## Hybrid/Virtual
 
@@ -568,24 +594,23 @@ Conference has continued on and become something even more amazing
 # Togetherness
 
 > The value of “seeing the community” is that all the different threads can come together: people who may not have recognized each other as partners, all of a sudden had a common purpose.
-
-- John David Smith
+> - John David Smith
 
 # What About The Future?
 
 ## Goals
 
-- Get out of Portland {{< fa-solid fa-square-check >}}
-- Keep values upheld  {{< fa-solid fa-square-check >}}
-- Encourage participation from all   {{< fa-solid fa-square-check >}}
+- Get out of Portland {{< fa square-check >}}
+- Keep values upheld  {{< fa square-check >}}
+- Encourage participation from all   {{< fa square-check >}}
     - (even a 5 minute talk on something you learned! we are all learners)
-- Continue to learn how to increase diversity, accessibility, reach underrepresented groups  {{< fas fa-check-square >}}
+- Continue to learn how to increase diversity, accessibility, reach underrepresented groups  {{< fa square-check >}}
 
 ## Answers to the Questions
 
 :::{.fragment}
 - Can you organize a conference with just 6 people?
-  - Yeah!
+  - Yeah, with the help of the R community!
 :::
 
 :::{.fragment}
@@ -595,7 +620,7 @@ Conference has continued on and become something even more amazing
 
 :::{.fragment}
 - Should you volunteer for the next Cascadia R?
-  - Yeah!
+  - Yeah! You really should.
 :::
   
 ::: {.fragment}
@@ -608,6 +633,6 @@ Conference has continued on and become something even more amazing
 - OHSU, Posit, ProCogia, Fred Hutch, and R-Consortium and other sponsors
 - Cascadia-R Organizers (past and present)
 - You! The amazing Cascadia-R audience and speakers
-- Made with Quarto
+- [Made with Quarto](https://quarto.org)
 
   
