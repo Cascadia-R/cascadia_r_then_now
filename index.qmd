@@ -494,6 +494,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 ## What Did We Learn? 
 
 - Volunteers are awesome and step up
+- Home-grown is cost-effective (balanced our budget)
 - Workshops take work, but are well received
 - Amazing speakers are all around us
 - A conference is all about the people
@@ -598,7 +599,7 @@ Conference has continued on and become something even more amazing
 :::
   
 ::: {.fragment}
-- What is that ggplot2 Barbie theme?
+- What is that `{ggplot2}` Barbie theme?
   - `theme_barbie()` from [{ThemePark}](https://github.com/MatthewBJane/theme_park)
 :::
   
