@@ -114,8 +114,8 @@ cascadia-R <- pdx_r |>
 
 ::::{.columns}
 :::{.column width="30%"}
-- Trello
-- Slack
+- [Trello (pull plan)](https://trello.com/b/lphkRbnU/cascadia-r-pull-plan)
+- [Slack](https://cascadiarconf.slack.com)
 - Asynchronous Decisions
 - Everyone did their part and it all came together
 :::
@@ -262,11 +262,29 @@ cascadia_r |>
 ![Wide picture showing 254 people](images/IMG_4201.JPG)
 
 
-
 ## How far did people travel?
 
-![Histogram of Distance](images/histogram-distance.png)
+```{r}
+#| message: false
+#| warning: false
+ 
+responses |>
+  select(contains("mile")) |>
+  rename(miles=`How many miles did you travel to get here?`) |>
+  #mutate(miles=readr::parse_number(miles)) |>
+  filter(miles < 2000) |>
+  ggplot() + 
+  aes(x=miles) +
+  geom_histogram(bins = 50, fill="#f29ad8", color="pink") +
+  #theme_barbie() +
+  labs(title="How many miles did you travel to get here? (n=59)") +
+  ylab("count") + ylim(c(0,33)) +
+  annotate(x=0, y=31, geom="text", label="Portland") +
+  annotate(x=165, y=8, geom="text", label="Seattle") +
+  annotate(x=635, y=2, geom="text", label="San Francisco") +
+  theme_barbie()
 
+```
 
 ## Diverse in Skill Levels
 
