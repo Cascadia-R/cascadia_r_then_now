@@ -282,12 +282,13 @@ responses |>
   labs(title="How many miles did you travel to get here? (n=59)") +
   ylab("count") + ylim(c(0,33)) +
   annotate(x=0, y=31, geom="text", label="Portland") +
-  annotate(x=83, y=3, geom="text", label="Corvallis/Eugene") +
+  annotate(x=83, y=5, geom="text", label="Corvallis/\nEugene") +
   annotate(x=165, y=8, geom="text", label="Seattle") +
   annotate(x=635, y=2, geom="text", label="San Francisco") +
   theme_barbie()
 
 ```
+<https://milesofme.com/portland-or/1000>
 
 ## Diverse in Skill Levels
 
@@ -524,6 +525,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Workshop material is still being used
 - Accessibility is appreciated (cheap tickets, scholarships, childcare, lactation room)
 
+# Now: Cascadia-R Beyond Us
 
 ## Cascadia-R continues to evolve
 
@@ -595,15 +597,23 @@ Conference has continued on and become something even more amazing
 > The value of “seeing the community” is that all the different threads can come together: people who may not have recognized each other as partners, all of a sudden had a common purpose.
 > - John David Smith
 
-# What About The Future?
+# Next
 
 ## Goals
 
+:::{.fragment}
 - Get out of Portland {{< fa square-check >}}
+:::
+:::{.fragment}
 - Keep values upheld  {{< fa square-check >}}
+:::
+:::{.fragment}
 - Encourage participation from all   {{< fa square-check >}}
     - (even a 5 minute talk on something you learned! we are all learners)
+:::
+:::{.fragment}
 - Continue to learn how to increase diversity, accessibility, reach underrepresented groups  {{< fa square-check >}}
+:::
 
 ## Answers to the Questions
 
