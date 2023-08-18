@@ -74,7 +74,7 @@
     "href": "index.html#who-gets-to-talk",
     "title": "Cascadia-R",
     "section": "Who Gets to Talk?",
-    "text": "Who Gets to Talk?\n\nDistribution. of Talk Proposal Scores"
+    "text": "Who Gets to Talk?\n\nDistribution of Talk Proposal Scores"
   },
   {
     "objectID": "index.html#what-happened-on-the-big-day",
@@ -102,7 +102,7 @@
     "href": "index.html#lightning-talks",
     "title": "Cascadia-R",
     "section": "Lightning Talks",
-    "text": "Lightning Talks\n\n\n\n\nAmy Williams\n\nUsing R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs\n\n\n\n\n\nJacqueline Nolis\n\nUsing deep learning in R to generate offensive license plates\n\n\n\n\n\nCaitlin Hudon\n\nNULL: When Missing Data is Valuable"
+    "text": "Lightning Talks\n\n\n\n\nAmy Williams\n\nUsing R for Behavioral Data: The Fun and Frustration of Factorial and Repeated-Measures ANOVAs\n\n\n\n\n\nJacqueline Nolis\n\nUsing deep learning in R to generate offensive license plates"
   },
   {
     "objectID": "index.html#workshops",
@@ -207,7 +207,7 @@
     "href": "index.html#friends-we-made-along-the-way",
     "title": "Cascadia-R",
     "section": "Friends we made along the way",
-    "text": "Friends we made along the way\n\n\n\nCaitlin Hudon\nJacqueline Nolis\nSondra Stegenga\nDror Berel\nIsabella Velaquez\nAlison Hill\n\n\n\nDaniel Anderson\nEllis Hughes\nDavid Severski\nKara Woo\nMeike Niederhausen\nCharlotte Wickham"
+    "text": "Friends we made along the way\n\n\n\nCaitlin Hudon\nJacqueline and Heather Nolis\nSondra Stegenga\nDror Berel\nIsabella Velaquez\nAlison Hill\n\n\n\nDaniel Anderson\nEllis Hughes\nDavid Severski\nKara Woo\nMeike Niederhausen\nCharlotte Wickham"
   },
   {
     "objectID": "index.html#what-did-we-learn",
@@ -305,7 +305,7 @@
     "href": "index.html#panel-discussion",
     "title": "Cascadia-R",
     "section": "Panel Discussion",
-    "text": "Panel Discussion\n\n\n\nImpostor Syndrome\n\nFrank Discussion of what it means\n\n\n\ncascadia_r |&gt;\n  drop_feeling(\"impostor\")"
+    "text": "Panel Discussion\n\n\n\nImpostor Syndrome\n\nFrank Discussion of what it means\n\n\ncascadia_r |&gt;\n  drop_feeling(\"impostor\")"
   },
   {
     "objectID": "index.html#thank-you-and-gratitude",

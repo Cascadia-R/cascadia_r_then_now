@@ -164,7 +164,7 @@ cascadia-R <- pdx_r |>
 
 ## Who Gets to Talk?
 
-![Distribution. of Talk Proposal Scores](images/talk-proposals.jpg)
+![Distribution of Talk Proposal Scores](images/talk-proposals.jpg)
 
 ## What Happened on the Big Day?
 
@@ -211,12 +211,13 @@ Lesson: it doesn't hurt to ask!
 :::{.column}
 - Impostor Syndrome
   - Frank Discussion of what it means
-:::
-:::{.column}
+  
 ```
 cascadia_r |>
   drop_feeling("impostor")
 ```
+:::
+:::{.column}
 
 {{< fa users size=10x >}}
 :::
@@ -367,11 +368,8 @@ responses3 |>
     - *Using deep learning in R to generate offensive license plates*
 :::
 
-::: {.fragment}
-- **Caitlin Hudon**	
-    - [*NULL: When Missing Data is Valuable*](https://docs.google.com/presentation/d/1tq1NKuA_OrPEWjT63yi2Oq-KtXRsHnHawByw6-a_Y6w/edit#slide=id.p)
 :::
-:::
+
 :::{.column}
 ![](images/IMG_4404-license.jpg)
 :::
@@ -382,7 +380,7 @@ responses3 |>
 :::: {.columns}
 ::: {.column width="50%"}
 - Caitlin Hudon
-- Jacqueline Nolis
+- Jacqueline and Heather Nolis
 - Sondra Stegenga
 - Dror Berel
 - Isabella Velaquez
