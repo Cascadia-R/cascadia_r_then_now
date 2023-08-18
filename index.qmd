@@ -47,15 +47,30 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="30%"}
 ![Gigantic Brewery](images/gigantic.jpg)
+```
+cascadia-R <- pdx_r |>
+  add_group(oregon_state) |>
+  add_group(seattle) |>
+  add_group(vancouver) |>
+  add_group(u_oregon)
+```
 :::
 
-::: {.column width="50%"}
+::: {.column width="70%"}
+:::{.fragment}
 - Lots of R Groups: PDX-R, Oregon State University, Seattle-R, Vancouver-R
+:::
+:::{.fragment}
 - beeR discussion: "How can we bring these groups together?"
+:::
+:::{.fragment}
 - "How can we make the conference accessible to the most people?"
+:::
+:::{.fragment}
 - "Where can we hold it?"
+:::
 :::
 
 ::::
@@ -91,22 +106,21 @@ responses2 <- read_csv("data/Cascadia R Conference Evaluation(Responses) - 2018 
 :::
 
 :::{.column}
-![](images/CascadiaRConf-Intro.png){width=600}
+![Cascadia-R Organizer Team](images/CascadiaRConf-Intro.png){width=600}
 :::
 ::::
 
-- Everyone did their part and it all came together
-
-## Asynchronous Tools that helped make the conference
+## Tools that helped make the conference
 
 ::::{.columns}
 :::{.column width="30%"}
 - Trello
 - Slack
-- Allowed us to make Asynchronous Decisions
+- Asynchronous Decisions
+- Everyone did their part and it all came together
 :::
 :::{.column width="70%}
-![](images/trello.png)
+![](images/trello.png){width=600}
 :::
 ::::
 ## Plan for a Minimum Viable Conference
@@ -182,15 +196,32 @@ Lesson: it doesn't hurt to ask!
 
 ## Workshops
 
+::::{.columns}
+:::{.column}
 - Home-grown
 - [gRadual intRoduction to Tidyverse](https://github.com/Cascadia-R/gRadual-intRoduction-tidyverse)
 - [Happy R Users Purrr](https://github.com/Cascadia-R/purrr-tutorial)
 - Deep Learning with TensorFlow
 - [R with Databases]()
+:::
+:::{.column}
+![Charlotte Wickham Teaching `purrr`](images/IMG_4199-purrr.JPG)
+:::
+::::
 
 ## Panel Discussion
 
+::::{.columns}
+:::{.column}
 - Impostor Syndrome
+:::
+:::{.column}
+```
+cascadia_r |>
+  drop_feeling("impostor")
+```
+:::
+::::
 
 ## cRaggy: Visualizing Data Together
 
@@ -209,15 +240,22 @@ Lesson: it doesn't hurt to ask!
 
 ## beeR
 
+::::{.columns}
+:::{.column}
 - Painful logistically but worth it
 - Hiring bartender and food service
 - Promising facilities not to make a mess
 - People were still chatting afterwards
+:::
+:::{.column}
+```
+cascadia_r |>
+  add_beer()
+```
+:::
+::::
 
-
-
-
-# Who are the Cascadia R Users?
+# Who are the Cascadia R Attendees?
 
 ## 2018: 254 People Registered!
 
@@ -492,7 +530,7 @@ Conference has continued on and become something even more amazing
 :::
 
 :::{.column}
-![](images/logo2020.png)
+![](images/logo2020.png){width=500}
 :::
 ::::
 
@@ -551,5 +589,6 @@ Conference has continued on and become something even more amazing
 - OHSU, Posit, ProCogia, Fred Hutch, and R-Consortium and other sponsors
 - Cascadia-R Organizers (past and present)
 - You! The amazing Cascadia-R audience and speakers
+- Made with Quarto
 
   

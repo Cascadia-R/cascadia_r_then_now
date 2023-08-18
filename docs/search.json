@@ -18,7 +18,7 @@
     "href": "index.html#the-origins",
     "title": "Cascadia-R",
     "section": "The origins",
-    "text": "The origins\n\n\n\n\n\nGigantic Brewery\n\n\n\n\nLots of R Groups: PDX-R, Oregon State University, Seattle-R, Vancouver-R\nbeeR discussion: “How can we bring these groups together?”\n“How can we make the conference accessible to the most people?”\n“Where can we hold it?”"
+    "text": "The origins\n\n\n\n\n\nGigantic Brewery\n\n\ncascadia-R &lt;- pdx_r |&gt;\n  add_group(oregon_state) |&gt;\n  add_group(seattle) |&gt;\n  add_group(vancouver) |&gt;\n  add_group(u_oregon)\n\n\n\nLots of R Groups: PDX-R, Oregon State University, Seattle-R, Vancouver-R\n\n\n\n\nbeeR discussion: “How can we bring these groups together?”\n\n\n\n\n“How can we make the conference accessible to the most people?”\n\n\n\n\n“Where can we hold it?”"
   },
   {
     "objectID": "index.html#our-values",
@@ -32,7 +32,7 @@
     "href": "index.html#it-was-just-67-people",
     "title": "Cascadia-R",
     "section": "2017-2018: It was just 6/7 people",
-    "text": "2017-2018: It was just 6/7 people\n\n\n\nChester Ismay\n\nJessica Minnier\nJohn David Smith\nLilly Winfree\nScott Chamberlain\nTed Laderas\nAaron Makubuya (2018)\n\n\n\n\n\n\nEveryone did their part and it all came together"
+    "text": "2017-2018: It was just 6/7 people\n\n\n\nChester Ismay\n\nJessica Minnier\nJohn David Smith\nLilly Winfree\nScott Chamberlain\nTed Laderas\nAaron Makubuya (2018)\n\n\n\n\n\nCascadia-R Organizer Team"
   },
   {
     "objectID": "index.html#plan-for-a-minimum-viable-conference",
@@ -109,14 +109,14 @@
     "href": "index.html#workshops",
     "title": "Cascadia-R",
     "section": "Workshops",
-    "text": "Workshops\n\nHome-grown\ngRadual intRoduction to Tidyverse\nHappy R Users Purrr\nDeep Learning with TensorFlow\nR with Databases"
+    "text": "Workshops\n\n\n\nHome-grown\ngRadual intRoduction to Tidyverse\nHappy R Users Purrr\nDeep Learning with TensorFlow\nR with Databases\n\n\n\n\n\nCharlotte Wickham Teaching purrr"
   },
   {
     "objectID": "index.html#beer",
     "href": "index.html#beer",
     "title": "Cascadia-R",
     "section": "beeR",
-    "text": "beeR\n\nPainful logistically but worth it\nHiring bartender and food service\nPromising facilities not to make a mess\nPeople were still chatting afterwards"
+    "text": "beeR\n\n\n\nPainful logistically but worth it\nHiring bartender and food service\nPromising facilities not to make a mess\nPeople were still chatting afterwards\n\n\ncascadia_r |&gt;\n  add_beer()"
   },
   {
     "objectID": "index.html#craggy-visualizing-together",
@@ -305,14 +305,14 @@
     "href": "index.html#panel-discussion",
     "title": "Cascadia-R",
     "section": "Panel Discussion",
-    "text": "Panel Discussion\n\nImpostor Syndrome"
+    "text": "Panel Discussion\n\n\n\nImpostor Syndrome\n\n\ncascadia_r |&gt;\n  drop_feeling(\"impostor\")"
   },
   {
     "objectID": "index.html#thank-you-and-gratitude",
     "href": "index.html#thank-you-and-gratitude",
     "title": "Cascadia-R",
     "section": "Thank You and Gratitude",
-    "text": "Thank You and Gratitude\n\nOHSU, Posit, and R-Consortium and other sponsors\nCascadia-R Organizers (past and present)\nAmazing Cascadia-R audience and speakers\nYou!\n\n\n\nhttps://bit.ly/cascadia_history"
+    "text": "Thank You and Gratitude\n\nOHSU, Posit, ProCogia, Fred Hutch, and R-Consortium and other sponsors\nCascadia-R Organizers (past and present)\nYou! The amazing Cascadia-R audience and speakers\nMade with Quarto\n\n\n\nhttps://bit.ly/cascadia_history"
   },
   {
     "objectID": "index.html#cascadia-r-continues-to-evolve",
@@ -327,5 +327,12 @@
     "title": "Cascadia-R",
     "section": "The Cascadia-R that Wasn’t (2020)",
     "text": "The Cascadia-R that Wasn’t (2020)\n\n\n\nUniversity of Oregon\nDaniel Anderson\nBrendan Cullen"
+  },
+  {
+    "objectID": "index.html#tools-that-helped-make-the-conference",
+    "href": "index.html#tools-that-helped-make-the-conference",
+    "title": "Cascadia-R",
+    "section": "Tools that helped make the conference",
+    "text": "Tools that helped make the conference\n\n\n\nTrello\nSlack\nAsynchronous Decisions\nEveryone did their part and it all came together"
   }
 ]
