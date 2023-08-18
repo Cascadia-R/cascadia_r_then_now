@@ -497,7 +497,7 @@ wordcloud(tf_counts$word, tf_counts$n,
 - Workshops take work, but are well received
 - Amazing speakers are all around us
 - A conference is all about the people
-- **Cascadia R users are amazing**
+- **Cascadia R community members are amazing**
 
 ## The Legacy of Cascadia-R
 
